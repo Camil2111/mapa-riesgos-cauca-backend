@@ -11,23 +11,22 @@ export const scrapeProclama = async () => {
 
         $('.td-module-container').each((index, element) => {
             const titulo = $(element).find('.entry-title a').text().trim()
-            const link = $(element).find('.entry-title a').attr('href')
             const resumen = $(element).find('.td-excerpt').text().trim()
 
-            if (titulo && link) {
+            if (titulo.toLowerCase().includes('cauca')) {
                 guardarEvento({
-                    municipio: "Cauca",
+                    municipio: 'Cauca',
                     vereda: titulo,
-                    tipo: "Noticia",
-                    descripcion: resumen || "Sin descripción",
+                    tipo: 'Noticia',
+                    descripcion: resumen || 'Sin descripción',
                     fecha: new Date().toLocaleDateString('es-CO'),
-                    lat: 2.5, // Puedes ajustar si extraemos coordenadas
+                    lat: 2.5,
                     lng: -76.6
                 })
             }
         })
 
-        console.log('✅ Proceso de scrapeo finalizado')
+        console.log('📌 Finalizó scrapeo de Proclama')
     } catch (error) {
         console.error('❌ Error scrapeando Proclama:', error.message)
     }
