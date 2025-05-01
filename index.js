@@ -2,7 +2,6 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-
 import riesgoRoutes from './routes/riesgo.routes.js';
 import eventoRoutes from './routes/evento.routes.js';
 import estadisticasRoutes from './routes/estadisticas.js';
