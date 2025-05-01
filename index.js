@@ -8,13 +8,13 @@ import eventoRoutes from './routes/evento.routes.js';
 import estadisticasRoutes from './routes/estadisticas.js';
 import scrapingRoutes from './routes/scraping.routes.js';
 
-import './cron/scraperCron.js'; // Si querés mantener el cron local
+import './cron/scraperCron.js'; // Ejecuta scrapers periódicamente
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGO_URI; // 🔥 Elimina fallback local que jodía en Render
+const MONGO_URI = process.env.MONGO_URI;
 
 if (!MONGO_URI) {
     console.error('❌ MONGO_URI no está definido en las variables de entorno.');
@@ -25,13 +25,18 @@ if (!MONGO_URI) {
 app.use(cors());
 app.use(express.json());
 
-// Rutas
+// Rutas principales
 app.use('/api/riesgos', riesgoRoutes);
 app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
 app.use('/api', scrapingRoutes);
 
-// Conexión a MongoDB y arranque del servidor
+// Ruta raíz (solo para ver que el backend está vivo)
+app.get('/', (req, res) => {
+    res.send('🌍 API del Sistema de Monitoreo de Riesgo Territorial está en línea');
+});
+
+// Conexión y arranque del servidor
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
