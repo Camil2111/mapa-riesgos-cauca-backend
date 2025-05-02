@@ -2,82 +2,41 @@ import axios from 'axios'
 import * as cheerio from 'cheerio'
 import Evento from '../models/evento.model.js'
 
-const departamentos = [
-    {
-        nombre: 'CAUCA',
-        url: 'https://www.bluradio.com/nacion/region/cauca',
-        municipio: 'POPAYÁN',
-        lat: 2.4419,
-        lng: -76.6069,
-        nivel_riesgo: 'Medio'
-    },
-    {
-        nombre: 'VALLE DEL CAUCA',
-        url: 'https://www.bluradio.com/nacion/region/valle-del-cauca',
-        municipio: 'CALI',
-        lat: 3.4516,
-        lng: -76.5320,
-        nivel_riesgo: 'Medio'
-    },
-    {
-        nombre: 'NARIÑO',
-        url: 'https://www.bluradio.com/nacion/region/narino',
-        municipio: 'PASTO',
-        lat: 1.2136,
-        lng: -77.2811,
-        nivel_riesgo: 'Medio'
-    },
-    {
-        nombre: 'ANTIOQUIA',
-        url: 'https://www.bluradio.com/nacion/region/antioquia',
-        municipio: 'MEDELLÍN',
-        lat: 6.2442,
-        lng: -75.5812,
-        nivel_riesgo: 'Alto'
-    },
-    {
-        nombre: 'RISARALDA',
-        url: 'https://www.bluradio.com/nacion/region/risaralda',
-        municipio: 'PEREIRA',
-        lat: 4.8087,
-        lng: -75.6906,
-        nivel_riesgo: 'Bajo'
-    },
-    {
-        nombre: 'QUINDÍO',
-        url: 'https://www.bluradio.com/nacion/region/quindio',
-        municipio: 'ARMENIA',
-        lat: 4.5339,
-        lng: -75.6811,
-        nivel_riesgo: 'Bajo'
-    }
+const palabrasClave = [
+    { nombre: 'CAUCA', ciudad: 'POPAYÁN', lat: 2.4419, lng: -76.6069, riesgo: 'Medio' },
+    { nombre: 'VALLE DEL CAUCA', ciudad: 'CALI', lat: 3.4516, lng: -76.5320, riesgo: 'Medio' },
+    { nombre: 'NARIÑO', ciudad: 'PASTO', lat: 1.2136, lng: -77.2811, riesgo: 'Medio' },
+    { nombre: 'ANTIOQUIA', ciudad: 'MEDELLÍN', lat: 6.2442, lng: -75.5812, riesgo: 'Alto' },
+    { nombre: 'RISARALDA', ciudad: 'PEREIRA', lat: 4.8087, lng: -75.6906, riesgo: 'Bajo' },
+    { nombre: 'QUINDÍO', ciudad: 'ARMENIA', lat: 4.5339, lng: -75.6811, riesgo: 'Bajo' }
 ]
 
 const runScraperBluRadio = async () => {
-    for (let dep of departamentos) {
-        try {
-            const { data } = await axios.get(dep.url)
-            const $ = cheerio.load(data)
-            const noticias = []
+    const url = 'https://www.bluradio.com/nacion'
+    const { data } = await axios.get(url)
+    const $ = cheerio.load(data)
+    const noticias = []
 
-            $('a.article-title').each((i, el) => {
-                const titulo = $(el).text().trim()
-                const link = $(el).attr('href')
-                if (titulo && link) {
-                    noticias.push({
-                        titulo,
-                        link: link.startsWith('http') ? link : `https://www.bluradio.com${link}`
-                    })
-                }
+    $('a.article-title').each((i, el) => {
+        const titulo = $(el).text().trim()
+        const link = $(el).attr('href')
+        if (titulo && link) {
+            noticias.push({
+                titulo,
+                link: link.startsWith('http') ? link : `https://www.bluradio.com${link}`
             })
+        }
+    })
 
-            for (let noticia of noticias.slice(0, 3)) {
+    for (let noticia of noticias.slice(0, 10)) {
+        for (let dep of palabrasClave) {
+            if (noticia.titulo.toUpperCase().includes(dep.nombre) || noticia.titulo.toUpperCase().includes(dep.ciudad)) {
                 const existe = await Evento.findOne({ descripcion: noticia.titulo })
                 if (!existe) {
                     await Evento.create({
-                        municipio: dep.municipio,
+                        municipio: dep.ciudad,
                         departamento: dep.nombre,
-                        nivel_riesgo: dep.nivel_riesgo,
+                        nivel_riesgo: dep.riesgo,
                         fecha: new Date(),
                         descripcion: noticia.titulo,
                         vereda: 'No especificado',
@@ -85,14 +44,14 @@ const runScraperBluRadio = async () => {
                         lat: dep.lat,
                         lng: dep.lng
                     })
+                    console.log(`✅ Noticia registrada para ${dep.nombre}: ${noticia.titulo}`)
                 }
             }
-
-            console.log(`✅ BluRadio ${dep.nombre}: revisadas ${noticias.length} noticias.`)
-        } catch (err) {
-            console.error(`❌ Error scraping BluRadio ${dep.nombre}:`, err.message)
         }
     }
+
+    console.log('✅ Scraper BluRadio finalizado.')
 }
 
 export default runScraperBluRadio
+

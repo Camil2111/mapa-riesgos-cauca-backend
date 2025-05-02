@@ -16,7 +16,7 @@ router.get('/scrap/proclama', async (req, res) => {
 
 router.get('/scrap/bluradio', async (req, res) => {
     await runScraperBluRadio()
-    res.json({ ok: true, fuente: 'BluRadio ejecutado (multi-departamento)' })
+    res.json({ ok: true, fuente: 'Blu Radio ejecutado (multi-departamento)' })
 })
 
 router.get('/scrap/alertas', async (req, res) => {
