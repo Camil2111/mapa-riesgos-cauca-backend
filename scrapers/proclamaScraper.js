@@ -1,33 +1,41 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
+import Evento from '../models/evento.model.js';
 import { guardarEvento } from '../controllers/evento.controller.js'
 
-export const scrapeProclama = async () => {
-    try {
-        console.log('🔍 Scrapeando Proclama del Cauca...')
+const runScraperProclama = async () => {
+    const url = 'https://www.proclamadelpacifico.com/cauca/';
+    const { data } = await axios.get(url);
+    const $ = cheerio.load(data);
+    const noticias = [];
 
-        const { data } = await axios.get('https://proclamadelcauca.com/seccion/noticias/')
-        const $ = cheerio.load(data)
+    $('.jeg_post_title a').each((i, el) => {
+        const titulo = $(el).text().trim();
+        const link = $(el).attr('href');
 
-        $('.td-module-container').each((index, element) => {
-            const titulo = $(element).find('.entry-title a').text().trim()
-            const resumen = $(element).find('.td-excerpt').text().trim()
+        if (titulo && link) {
+            noticias.push({ titulo, link });
+        }
+    });
 
-            if (titulo.toLowerCase().includes('cauca')) {
-                guardarEvento({
-                    municipio: 'Cauca',
-                    vereda: titulo,
-                    tipo: 'Noticia',
-                    descripcion: resumen || 'Sin descripción',
-                    fecha: new Date().toLocaleDateString('es-CO'),
-                    lat: 2.5,
-                    lng: -76.6
-                })
-            }
-        })
-
-        console.log('📌 Finalizó scrapeo de Proclama')
-    } catch (error) {
-        console.error('❌ Error scrapeando Proclama:', error.message)
+    for (let noticia of noticias.slice(0, 5)) {
+        const existe = await Evento.findOne({ descripcion: noticia.titulo });
+        if (!existe) {
+            await Evento.create({
+                municipio: 'CAUCA',
+                departamento: 'CAUCA',
+                nivel_riesgo: 'Medio',
+                fecha: new Date(),
+                descripcion: noticia.titulo,
+                vereda: 'No especificado',
+                tipo: 'Noticia',
+                lat: 2.44,
+                lng: -76.61
+            });
+        }
     }
-}
+
+    console.log(`✅ Se guardaron noticias de Proclama (${noticias.length})`);
+};
+
+module.exports = runScraperProclama;

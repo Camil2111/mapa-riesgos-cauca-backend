@@ -30,11 +30,6 @@ app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
 app.use('/api', scrapingRoutes);
 
-// Ruta raíz (solo para ver que el backend está vivo)
-app.get('/', (req, res) => {
-    res.send('🛡️ Backend API de Monitoreo de Riesgos en línea. Usa /api/eventos, /api/riesgos o /api/scrap');
-});
-
 // Conexión y arranque del servidor
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
@@ -50,3 +45,9 @@ mongoose.connect(MONGO_URI, {
         console.error('❌ Error conectando a MongoDB:', err);
         process.exit(1);
     });
+
+// Ruta raíz (solo para ver que el backend está vivo)
+app.get('/', (req, res) => {
+    res.send('🛡️ Backend API de Monitoreo de Riesgos en línea. Usa /api/eventos, /api/riesgos o /api/scrap');
+});
+
