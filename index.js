@@ -38,7 +38,7 @@ mongoose.connect(MONGO_URI, {
     .then(() => {
         console.log('✅ Conectado a MongoDB');
         app.listen(PORT, () => {
-            console.log(`🚀 Backend corriendo en http://localhost:${PORT}`);
+            console.log(`🚀 Backend corriendo en ${process.env.NODE_ENV === 'production' ? 'Render' : 'localhost'}:${PORT}`);
         });
     })
     .catch(err => {
