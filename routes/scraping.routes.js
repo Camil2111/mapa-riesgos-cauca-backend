@@ -1,16 +1,42 @@
-// backend/routes/scraping.routes.js
-const express = require('express');
-const router = express.Router();
-const runScraperProclama = require('../scrapers/proclamaScraper');
+import express from 'express'
+
+import runScraperProclama from '../scrapers/proclamaScraper.js'
+import runScraperBluRadio from '../scrapers/bluRadioScraper.js'
+import runScraperAlertas from '../scrapers/alertasHumanitariasScraper.js'
+import runScraperPaisValle from '../scrapers/paisValleScraper.js'
+import runScraperMinuto30 from '../scrapers/minuto30Scraper.js'
+import runScraperDiarioSur from '../scrapers/diarioSurScraper.js'
+
+const router = express.Router()
 
 router.get('/scrap/proclama', async (req, res) => {
-    try {
-        await runScraperProclama();
-        res.json({ ok: true, message: 'Scraping ejecutado correctamente' });
-    } catch (err) {
-        console.error('❌ Error al ejecutar scraper:', err);
-        res.status(500).json({ ok: false, error: 'Error ejecutando el scraper' });
-    }
-});
+    await runScraperProclama()
+    res.json({ ok: true, fuente: 'Proclama ejecutado' })
+})
 
-module.exports = router;
+router.get('/scrap/bluradio', async (req, res) => {
+    await runScraperBluRadio()
+    res.json({ ok: true, fuente: 'BluRadio ejecutado (multi-departamento)' })
+})
+
+router.get('/scrap/alertas', async (req, res) => {
+    await runScraperAlertas()
+    res.json({ ok: true, fuente: 'Alertas Humanitarias ejecutado' })
+})
+
+router.get('/scrap/valle', async (req, res) => {
+    await runScraperPaisValle()
+    res.json({ ok: true, fuente: 'El País Valle ejecutado' })
+})
+
+router.get('/scrap/antioquia', async (req, res) => {
+    await runScraperMinuto30()
+    res.json({ ok: true, fuente: 'Minuto30 ejecutado (Antioquia)' })
+})
+
+router.get('/scrap/narino', async (req, res) => {
+    await runScraperDiarioSur()
+    res.json({ ok: true, fuente: 'Diario del Sur ejecutado (Nariño)' })
+})
+
+export default router
