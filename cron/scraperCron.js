@@ -1,7 +1,5 @@
 import cron from 'node-cron'
 
-import cron from 'node-cron'
-
 import runScraperProclama from '../scrapers/proclamaScraper.js'
 import runScraperBluRadio from '../scrapers/bluRadioScraper.js'
 import runScraperAlertas from '../scrapers/alertasHumanitariasScraper.js'
