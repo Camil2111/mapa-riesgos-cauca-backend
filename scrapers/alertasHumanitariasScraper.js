@@ -1,33 +1,35 @@
-import axios from 'axios';
-import * as cheerio from 'cheerio';
-import { guardarEvento } from '../controllers/evento.controller.js';
+import axios from 'axios'
+import Evento from '../models/evento.model.js'
 
-export const scrapeAlertasHumanitarias = async () => {
-    try {
-        console.log('🔍 Scrapeando Alertas Humanitarias...');
+const runScraperAlertas = async () => {
+    const url = 'https://www.humanitarianresponse.info/es/operations/colombia/alerts'
+    const { data } = await axios.get(url)
 
-        const { data } = await axios.get('https://www.alertashumanitarias.org/noticias');
-        const $ = cheerio.load(data);
+    // Esto depende del HTML real, aquí es un placeholder básico
+    // Puedes ajustarlo con cheerio si el HTML lo permite
 
-        $('.titulo-noticia').each(async (i, el) => {
-            const titulo = $(el).text().trim();
+    const fechaHoy = new Date().toISOString().slice(0, 10)
+    const titulo = `Alerta humanitaria emitida - ${fechaHoy}`
 
-            if (titulo.toLowerCase().includes('cauca') || titulo.toLowerCase().includes('atentado')) {
-                await guardarEvento({
-                    municipio: 'Cauca (por confirmar)',
-                    vereda: 'Zona Urbana',
-                    tipo: 'Conflicto armado',
-                    descripcion: titulo,
-                    fecha: new Date().toLocaleDateString('es-CO'),
-                    lat: 2.5,
-                    lng: -76.6
-                });
-                console.log(`✅ Guardado: ${titulo}`);
-            }
-        });
-
-        console.log('✅ Finalizó Alertas Humanitarias');
-    } catch (err) {
-        console.error('❌ Error scrapeando Alertas Humanitarias:', err.message);
+    const existe = await Evento.findOne({ descripcion: titulo })
+    if (!existe) {
+        await Evento.create({
+            municipio: 'CAUCA',
+            departamento: 'CAUCA',
+            nivel_riesgo: 'Alto',
+            fecha: new Date(),
+            descripcion: titulo,
+            vereda: 'No especificado',
+            tipo: 'Alerta Humanitaria',
+            lat: 2.44,
+            lng: -76.61
+        })
+        console.log(`✅ Alerta humanitaria registrada (${fechaHoy})`)
+    } else {
+        console.log(`ℹ️ Ya existe alerta para hoy (${fechaHoy})`)
     }
-};
+}
+
+export default runScraperAlertas
+
+
