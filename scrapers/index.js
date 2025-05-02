@@ -1,7 +1,7 @@
 // backend/scrapers/index.js
 import { scrapeProclama } from './proclamaScraper.js'
 import { scrapeBluRadio } from './bluRadioScraper.js'
-import { scrapeAlertas } from './alertasHumanitarias.js'
+import { scrapeAlertas } from './alertasHumanitariasScraper.js'
 
 export const ejecutarScrapers = async () => {
     console.log('🚨 Ejecutando todos los scrapers...')

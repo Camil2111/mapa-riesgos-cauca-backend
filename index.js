@@ -32,7 +32,7 @@ app.use('/api', scrapingRoutes);
 
 // Ruta raíz (solo para ver que el backend está vivo)
 app.get('/', (req, res) => {
-    res.send('🌍 API del Sistema de Monitoreo de Riesgo Territorial está en línea');
+    res.send('🛡️ Backend API de Monitoreo de Riesgos en línea. Usa /api/eventos, /api/riesgos o /api/scrap');
 });
 
 // Conexión y arranque del servidor
