@@ -2,36 +2,38 @@ import axios from 'axios'
 import * as cheerio from 'cheerio'
 import Evento from '../models/evento.model.js'
 
-const runScraperProclama = async () => {
-    const url = 'https://www.proclamadelpacifico.com/cauca/'
+const runScraperMinuto30 = async () => {
+    const url = 'https://www.minuto30.com/seccion/judicial/'
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
     const noticias = []
 
-    $('.jeg_post_title a').each((i, el) => {
+    $('div.masonry-item h3 a').each((i, el) => {
         const titulo = $(el).text().trim()
         const link = $(el).attr('href')
-        if (titulo && link) noticias.push({ titulo, link })
+        if (titulo && link) {
+            noticias.push({ titulo, link })
+        }
     })
 
     for (let noticia of noticias.slice(0, 5)) {
         const existe = await Evento.findOne({ descripcion: noticia.titulo })
         if (!existe) {
             await Evento.create({
-                municipio: 'CAUCA',
-                departamento: 'CAUCA',
-                nivel_riesgo: 'Medio',
+                municipio: 'MEDELLÍN',
+                departamento: 'ANTIOQUIA',
+                nivel_riesgo: 'Alto',
                 fecha: new Date(),
                 descripcion: noticia.titulo,
                 vereda: 'No especificado',
                 tipo: 'Noticia',
-                lat: 2.44,
-                lng: -76.61
+                lat: 6.2442,
+                lng: -75.5812
             })
         }
     }
 
-    console.log(`✅ Proclama: se revisaron ${noticias.length} noticias, se agregaron nuevas si no existían.`)
+    console.log(`✅ Minuto30 Antioquia: revisadas ${noticias.length} noticias.`)
 }
 
-export default runScraperProclama
+export default runScraperMinuto30
