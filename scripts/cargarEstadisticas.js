@@ -1,19 +1,46 @@
-// cargarEstadisticas.js
-import axios from 'axios'
+// scripts/cargarEstadisticas.js
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import Estadistica from '../models/estadistica.model.js'
 
-const datos = JSON.parse(fs.readFileSync('./estadisticas.json', 'utf-8'))
-const API_URL = 'https://backend-mapa-riesgos-cauca.onrender.com/api/estadisticas'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-const cargar = async () => {
-    for (const item of datos) {
-        try {
-            const res = await axios.post(API_URL, item)
-            console.log(`✅ Subido: ${item.municipio} - ${item.tipo} (${item.cantidad})`)
-        } catch (err) {
-            console.error(`❌ Error en ${item.municipio} - ${item.tipo}:`, err.response?.data || err.message)
-        }
-    }
+dotenv.config({ path: path.resolve(__dirname, '../.env') })
+
+if (!process.env.MONGO_URI) {
+    console.error('❌ MONGO_URI no está definido en el .env')
+    process.exit(1)
 }
 
-cargar()
+const filePath = path.join(__dirname, '../data/estadistica.json')
+let datos = []
+
+try {
+    datos = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+} catch (err) {
+    console.error('❌ Error leyendo archivo:', err)
+    process.exit(1)
+}
+
+const registros = datos.map(d => ({
+    municipio: d.municipio?.toUpperCase() || 'DESCONOCIDO',
+    departamento: d.departamento?.toUpperCase() || 'SIN DEPTO',
+    tipo: d.tipo?.toLowerCase() || 'otro',
+    mes: d.mes || null,
+    cantidad: Number(d.cantidad) || 1
+}))
+
+mongoose.connect(process.env.MONGO_URI)
+    .then(async () => {
+        const insertados = await Estadistica.insertMany(registros)
+        console.log(`✅ ${insertados.length} registros cargados con éxito a Estadisticas`)
+        process.exit(0)
+    })
+    .catch(err => {
+        console.error('❌ Error conectando a MongoDB:', err)
+        process.exit(1)
+    })
