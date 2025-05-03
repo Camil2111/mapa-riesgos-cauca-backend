@@ -1,10 +1,22 @@
 import express from 'express'
+import Estadistica from '../models/estadistica.model.js'
 import Evento from '../models/evento.model.js'
 
 const router = express.Router()
 
-// GET /api/estadisticas?municipio=Popayán&departamento=Cauca&desde=2024-01-01&hasta=2025-01-01
+// RUTA SEGURA: /api/estadisticas → devuelve lo que ya tenías
 router.get('/', async (req, res) => {
+    try {
+        const datos = await Estadistica.find().limit(100)
+        res.json(datos)
+    } catch (error) {
+        console.error('❌ Error al obtener estadísticas básicas:', error)
+        res.status(500).json({ error: 'Error al obtener estadísticas' })
+    }
+})
+
+// RUTA NUEVA: /api/estadisticas/dinamicas → genera desde eventos
+router.get('/dinamicas', async (req, res) => {
     try {
         const { municipio, departamento, desde, hasta } = req.query
 
@@ -51,9 +63,10 @@ router.get('/', async (req, res) => {
 
         res.json(resultados)
     } catch (error) {
-        console.error('❌ Error generando estadísticas:', error)
-        res.status(500).json({ error: 'Error generando estadísticas' })
+        console.error('❌ Error generando estadísticas dinámicas:', error)
+        res.status(500).json({ error: 'Error generando estadísticas dinámicas' })
     }
 })
 
 export default router
+
