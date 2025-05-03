@@ -1,42 +1,59 @@
-// routes/estadisticas.js
-import express from 'express';
-import Estadistica from '../models/estadistica.model.js'
+import express from 'express'
+import Evento from '../models/evento.model.js'
 
-const router = express.Router();
+const router = express.Router()
 
-// Obtener todas las estadísticas (puedes limitar la cantidad)
+// GET /api/estadisticas?municipio=Popayán&departamento=Cauca&desde=2024-01-01&hasta=2025-01-01
 router.get('/', async (req, res) => {
     try {
-        const datos = await Estadistica.find().limit(100);
-        res.json(datos);
-    } catch (error) {
-        console.error('Error al obtener estadísticas:', error);
-        res.status(500).json({ error: 'Error al obtener estadísticas' });
-    }
-});
+        const { municipio, departamento, desde, hasta } = req.query
 
-// Obtener estadísticas filtradas por municipio
-router.get('/municipio/:nombre', async (req, res) => {
-    try {
-        const nombre = req.params.nombre.toUpperCase();
-        const datos = await Estadistica.find({ municipio: new RegExp(nombre, 'i') });
-        res.json(datos);
-    } catch (error) {
-        console.error('Error al filtrar por municipio:', error);
-        res.status(500).json({ error: 'Error al filtrar estadísticas' });
-    }
-});
+        const filtro = {}
 
-// Obtener estadísticas por departamento
-router.get('/departamento/:nombre', async (req, res) => {
-    try {
-        const nombre = req.params.nombre.toUpperCase();
-        const datos = await Estadistica.find({ departamento: new RegExp(nombre, 'i') });
-        res.json(datos);
-    } catch (error) {
-        console.error('Error al filtrar por departamento:', error);
-        res.status(500).json({ error: 'Error al filtrar estadísticas' });
-    }
-});
+        if (municipio) filtro.municipio = new RegExp(municipio, 'i')
+        if (departamento) filtro.departamento = new RegExp(departamento, 'i')
+        if (desde || hasta) {
+            filtro.fecha = {}
+            if (desde) filtro.fecha.$gte = new Date(desde)
+            if (hasta) filtro.fecha.$lte = new Date(hasta)
+        }
 
-export default router;
+        const resultados = await Evento.aggregate([
+            { $match: filtro },
+            {
+                $project: {
+                    municipio: 1,
+                    tipo: 1,
+                    fecha: 1,
+                    mes: { $dateToString: { format: "%Y-%m", date: "$fecha" } }
+                }
+            },
+            {
+                $group: {
+                    _id: {
+                        municipio: "$municipio",
+                        tipo: "$tipo",
+                        mes: "$mes"
+                    },
+                    cantidad: { $sum: 1 }
+                }
+            },
+            {
+                $project: {
+                    municipio: "$_id.municipio",
+                    tipo: "$_id.tipo",
+                    mes: "$_id.mes",
+                    cantidad: 1,
+                    _id: 0
+                }
+            }
+        ])
+
+        res.json(resultados)
+    } catch (error) {
+        console.error('❌ Error generando estadísticas:', error)
+        res.status(500).json({ error: 'Error generando estadísticas' })
+    }
+})
+
+export default router
