@@ -7,7 +7,7 @@ import eventoRoutes from './routes/evento.routes.js';
 import estadisticasRoutes from './routes/estadisticas.js';
 import scrapingRoutes from './routes/scraping.routes.js';
 
-import './cron/scraperCron.js'; // Ejecuta scrapers periódicamente
+import './cron/scraperCron.js';
 
 dotenv.config();
 
@@ -30,10 +30,15 @@ app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
 app.use('/api', scrapingRoutes);
 
-// Conexión y arranque del servidor
+// Ruta de prueba
+app.get('/', (req, res) => {
+    res.send('🛡️ Backend API de Monitoreo de Riesgos en línea. Usa /api/eventos, /api/riesgos o /api/scrap');
+});
+
+// Conexión a Mongo y arranque del servidor
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
 })
     .then(() => {
         console.log('✅ Conectado a MongoDB');
@@ -45,6 +50,7 @@ mongoose.connect(MONGO_URI, {
         console.error('❌ Error conectando a MongoDB:', err);
         process.exit(1);
     });
+
 
 // Ruta raíz (solo para ver que el backend está vivo)
 app.get('/', (req, res) => {
