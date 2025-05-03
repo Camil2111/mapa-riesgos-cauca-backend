@@ -1,10 +1,10 @@
 import express from 'express'
 import Estadistica from '../models/estadistica.model.js'
-import Evento from '../models/evento.model.js'
+import Evento from '../models/evento.model.js' // IMPORTACIÓN CORRECTA
 
 const router = express.Router()
 
-// RUTA SEGURA: /api/estadisticas → devuelve lo que ya tenías
+// GET: estadísticas básicas (las almacenadas manualmente o por carga)
 router.get('/', async (req, res) => {
     try {
         const datos = await Estadistica.find().limit(100)
@@ -15,11 +15,21 @@ router.get('/', async (req, res) => {
     }
 })
 
-// RUTA NUEVA: /api/estadisticas/dinamicas → genera desde eventos
+// POST: para recibir estadísticas nuevas (desde JSON o script)
+router.post('/', async (req, res) => {
+    try {
+        const nueva = await Estadistica.create(req.body)
+        res.status(201).json(nueva)
+    } catch (error) {
+        console.error('❌ Error al crear estadística:', error)
+        res.status(500).json({ error: 'Error al guardar estadística' })
+    }
+})
+
+// GET /api/estadisticas/dinamicas: generar estadísticas agrupadas desde eventos
 router.get('/dinamicas', async (req, res) => {
     try {
         const { municipio, departamento, desde, hasta } = req.query
-
         const filtro = {}
 
         if (municipio) filtro.municipio = new RegExp(municipio, 'i')

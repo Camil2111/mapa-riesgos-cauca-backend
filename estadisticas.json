@@ -1,0 +1,3117 @@
+[
+  {
+    "municipio": "AMAGÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "AMAGÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANDALUCÍA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANDALUCÍA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANDES",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "ANDES",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANORÍ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANZA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ANZA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "APARTADÓ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ARBOLETES",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ARGELIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ARGELIA",
+    "departamento": "CAUCA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 3
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 2
+  },
+  {
+    "municipio": "ARMENIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ATRATO",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BAJO BAUDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BARBACOAS",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BARBACOAS",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BARBACOAS",
+    "departamento": "NARIÑO",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BARBOSA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "BARBOSA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BARBOSA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "BARBOSA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 10
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 12
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 8
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 2
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 2
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 2
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 3
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELLO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BELMIRA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BETANIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BOLÍVAR",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BOLÍVAR",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BRICEÑO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 8
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 11
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 2
+  },
+  {
+    "municipio": "BUENAVENTURA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BUGALAGRANDE",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BURITICÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "BURITICÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAICEDO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAICEDONIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAICEDONIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAJIBÍO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CALARCA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 4
+  },
+  {
+    "municipio": "CALDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "CALDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALDONO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALDONO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 16
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 21
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 16
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 4
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 5
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 3
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 4
+  },
+  {
+    "municipio": "CALI",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 4
+  },
+  {
+    "municipio": "CALIMA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALOTO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALOTO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CALOTO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CANDELARIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CANDELARIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "CANDELARIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CANDELARIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAREPA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CAREPA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CAROLINA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CARTAGO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CARTAGO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CARTAGO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAUCASIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "CAUCASIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAUCASIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAUCASIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAUCASIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CAÑASGORDAS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CHINCHINÁ",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CISNEROS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CIUDAD BOLÍVAR",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CIUDAD BOLÍVAR",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CIUDAD BOLÍVAR",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "COCORNÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CONCORDIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CONSACA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "COPACABANA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 4
+  },
+  {
+    "municipio": "COPACABANA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "COPACABANA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "CÉRTEGUI",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DAGUA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DAGUA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DAGUA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DAGUA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DOSQUEBRADAS",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "DOSQUEBRADAS",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "DOSQUEBRADAS",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DOSQUEBRADAS",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "DOSQUEBRADAS",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CARMEN DE ATRATO",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CARMEN DE ATRATO",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CARMEN DE ATRATO",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CARMEN DE VIBORAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "EL CARMEN DE VIBORAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CARMEN DE VIBORAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CERRITO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "EL CERRITO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL CERRITO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "EL CERRITO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 2
+  },
+  {
+    "municipio": "EL CERRITO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 2
+  },
+  {
+    "municipio": "EL CHARCO",
+    "departamento": "NARIÑO",
+    "tipo": "terrorismo",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL DOVIO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL LITORAL DEL SAN JUAN",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL SANTUARIO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 4
+  },
+  {
+    "municipio": "EL SANTUARIO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "EL SANTUARIO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL TAMBO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "EL TAMBO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ENVIGADO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "ENVIGADO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 3
+  },
+  {
+    "municipio": "ENVIGADO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 6
+  },
+  {
+    "municipio": "ENVIGADO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FILANDIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FILANDIA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FLORIDA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FLORIDA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "FLORIDA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "FLORIDA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FREDONIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "FRONTINO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GIRARDOTA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GIRARDOTA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GIRARDOTA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "GIRARDOTA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUACHENÉ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUADALAJARA DE BUGA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "GUADALAJARA DE BUGA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUADALAJARA DE BUGA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "GUADALAJARA DE BUGA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 2
+  },
+  {
+    "municipio": "GUAITARILLA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUAPI",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUARNE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUARNE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUARNE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GUATAPÉ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "GÓMEZ PLATA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "HELICONIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "HELICONIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "INZÁ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "IPIALES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ISTMINA",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ISTMINA",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ISTMINA",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ISTMINA",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ISTMINA",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 5
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 6
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ITAGUI",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "JAMBALÓ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "JAMUNDÍ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 5
+  },
+  {
+    "municipio": "JAMUNDÍ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "JAMUNDÍ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "JAMUNDÍ",
+    "departamento": "VALLE",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "JAMUNDÍ",
+    "departamento": "VALLE",
+    "tipo": "terrorismo",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA CEJA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA CEJA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA CEJA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA CEJA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA CUMBRE",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA DORADA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA ESTRELLA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "LA ESTRELLA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "LA ESTRELLA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 2
+  },
+  {
+    "municipio": "LA ESTRELLA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA LLANADA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA UNIÓN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA UNIÓN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA UNIÓN",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA UNIÓN",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA VICTORIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LA VICTORIA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LEIVA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "LOS ANDES",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MAGÜI",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MALLAMA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MANIZALES",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MANIZALES",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "MANIZALES",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MANIZALES",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MANIZALES",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MARINILLA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 4
+  },
+  {
+    "municipio": "MARMATO",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 41
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 41
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 42
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 7
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 6
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 3
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 7
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 10
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 3
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 4
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 5
+  },
+  {
+    "municipio": "MEDELLÍN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 8
+  },
+  {
+    "municipio": "MEDIO SAN JUAN",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MERCADERES",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "MIRANDA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MONTENEGRO",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MONTENEGRO",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MORALES",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MORALES",
+    "departamento": "CAUCA",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "MUTATÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "NARIÑO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "NÓVITA",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "NÓVITA",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "OLAYA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PADILLA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PAEZ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PALMIRA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 5
+  },
+  {
+    "municipio": "PALMIRA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 7
+  },
+  {
+    "municipio": "PALMIRA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PALMIRA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PALMIRA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 4
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 4
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PASTO",
+    "departamento": "NARIÑO",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PATÍA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PATÍA",
+    "departamento": "CAUCA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEQUE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 6
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 3
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 3
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PEREIRA",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 3
+  },
+  {
+    "municipio": "PEÑOL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PIENDAMÓ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POLICARPA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 11
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 12
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 5
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 3
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 2
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 2
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 2
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 2
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "POPAYÁN",
+    "departamento": "CAUCA",
+    "tipo": "terrorismo",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PRADERA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PRADERA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PROVIDENCIA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PUEBLORRICO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PUERTO BERRÍO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PUERTO TEJADA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PUERTO TEJADA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "PUERTO TRIUNFO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PUERTO TRIUNFO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "PURACÉ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 17
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 16
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 15
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 3
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 3
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 3
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIBDÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIMBAYA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "QUIMBAYA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIMBAYA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "QUIMBAYA",
+    "departamento": "QUINDÍO",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "REMEDIOS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "REMEDIOS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RESTREPO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RETIRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 3
+  },
+  {
+    "municipio": "RETIRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RETIRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RICAURTE",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "RICAURTE",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RICAURTE",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RICAURTE",
+    "departamento": "NARIÑO",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RIOFRÍO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RIOFRÍO",
+    "departamento": "VALLE",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 7
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 4
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 5
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 2
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RIONEGRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RIOSUCIO",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RIOSUCIO",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ROSAS",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "ROSAS",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RÍO IRO",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "RÍO IRO",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 3
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SABANETA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SALGAR",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAMANIEGO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAMANIEGO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAMANÁ",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN ANDRES DE TUMACO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "SAN ANDRES DE TUMACO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN ANDRES DE TUMACO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN ANDRÉS DE CUERQUÍA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN FRANCISCO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN FRANCISCO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN JERÓNIMO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN JERÓNIMO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN JERÓNIMO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN JOSÉ DEL PALMAR",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN JUAN DE URABÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN LUIS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN PABLO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN PEDRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 2
+  },
+  {
+    "municipio": "SAN PEDRO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN PEDRO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN RAFAEL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN ROQUE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SAN VICENTE",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANDONÁ",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA BÁRBARA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA BÁRBARA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA BÁRBARA",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE CABAL",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE CABAL",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE CABAL",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE CABAL",
+    "departamento": "RISARALDA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE OSOS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTA ROSA DE OSOS",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTAFÉ DE ANTIOQUIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "SANTAFÉ DE ANTIOQUIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTAFÉ DE ANTIOQUIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTANDER DE QUILICHAO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "SANTANDER DE QUILICHAO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 7
+  },
+  {
+    "municipio": "SANTANDER DE QUILICHAO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTANDER DE QUILICHAO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SANTANDER DE QUILICHAO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SEGOVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SEGOVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SEGOVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SEVILLA",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SILVIA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SILVIA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SONSON",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SOPETRÁN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SOPETRÁN",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SOTARA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SOTARA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-10",
+    "cantidad": 1
+  },
+  {
+    "municipio": "SUÁREZ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 2
+  },
+  {
+    "municipio": "TADÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TADÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TADÓ",
+    "departamento": "CHOCÓ",
+    "tipo": "terrorismo",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TAMINANGO",
+    "departamento": "NARIÑO",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TARAZÁ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TIMBÍO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TIMBÍO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TORIBIO",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TORO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TOTORÓ",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TRUJILLO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-09",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 8
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 8
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 4
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "TULUÁ",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 2
+  },
+  {
+    "municipio": "TURBO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 3
+  },
+  {
+    "municipio": "TURBO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 2
+  },
+  {
+    "municipio": "URAMITA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-02",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VALDIVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 2
+  },
+  {
+    "municipio": "VALDIVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VALDIVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VALDIVIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "terrorismo",
+    "mes": "2025-06",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VALPARAÍSO",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VENECIA",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-04",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VERSALLES",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VILLA RICA",
+    "departamento": "CAUCA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "VILLAMARÍA",
+    "departamento": "CALDAS",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YARUMAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YARUMAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-07",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YARUMAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-08",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YARUMAL",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-12",
+    "cantidad": 2
+  },
+  {
+    "municipio": "YOLOMBÓ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YOLOMBÓ",
+    "departamento": "ANTIOQUIA",
+    "tipo": "extorsión",
+    "mes": "2025-11",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YOTOCO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-03",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YUMBO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  },
+  {
+    "municipio": "YUMBO",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-05",
+    "cantidad": 1
+  },
+  {
+    "municipio": "ZARZAL",
+    "departamento": "VALLE",
+    "tipo": "extorsión",
+    "mes": "2025-01",
+    "cantidad": 1
+  }
+]
