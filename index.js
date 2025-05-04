@@ -6,10 +6,13 @@ import riesgoRoutes from './routes/riesgo.routes.js';
 import eventoRoutes from './routes/evento.routes.js';
 import estadisticasRoutes from './routes/estadisticas.js';
 import scrapingRoutes from './routes/scraping.routes.js';
+import debugRoutes from './routes/debug.routes.js';
 
 import './cron/scraperCron.js';
 
 dotenv.config();
+
+app.use('/debug', debugRoutes)
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -23,6 +26,7 @@ if (!MONGO_URI) {
 // Middlewares
 app.use(cors());
 app.use(express.json());
+
 
 // Rutas principales
 app.use('/api/riesgos', riesgoRoutes);
