@@ -1,16 +1,18 @@
-// routes/debug.routes.js
-import express from 'express'
-import Estadistica from '../models/estadistica.model.js'
+import express from 'express';
+import Estadistica from '../models/estadistica.model.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.delete('/borrar-estadisticas', async (req, res) => {
+// ⚠️ Ruta de depuración: elimina TODAS las estadísticas
+router.get('/borrar-estadisticas', async (req, res) => {
     try {
-        await Estadistica.deleteMany({})
-        res.send('🧹 Estadísticas eliminadas.')
+        const result = await Estadistica.deleteMany({});
+        console.log(`🧹 ${result.deletedCount} estadísticas eliminadas.`);
+        res.send('🧹 Estadísticas eliminadas.');
     } catch (error) {
-        res.status(500).send('💥 Error eliminando estadísticas')
+        console.error('❌ Error al borrar estadísticas:', error);
+        res.status(500).send('Error al borrar estadísticas.');
     }
-})
+});
 
-export default router
+export default router;

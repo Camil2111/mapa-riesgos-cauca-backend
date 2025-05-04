@@ -12,8 +12,6 @@ import './cron/scraperCron.js';
 
 dotenv.config();
 
-app.use('/debug', debugRoutes)
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -33,6 +31,7 @@ app.use('/api/riesgos', riesgoRoutes);
 app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
 app.use('/api', scrapingRoutes);
+app.use('/debug', debugRoutes)
 
 // Ruta de prueba
 app.get('/', (req, res) => {
