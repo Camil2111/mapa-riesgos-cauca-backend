@@ -14,15 +14,19 @@ const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123'
 
 // 🟢 Login (usando email y password)
 router.post('/auth/login', (req, res) => {
-    const { email, password } = req.body
+    const { email, password } = req.body;
 
-    if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
-        const token = jwt.sign({ rol: 'admin', email }, SECRET, { expiresIn: '2h' })
-        return res.json({ token })
+    console.log('🧪 Login recibido ->', email, password);
+    console.log('🔍 Comparando con ->', process.env.ADMIN_EMAIL, process.env.ADMIN_PASSWORD);
+
+    if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+        const token = jwt.sign({ rol: 'admin', email }, process.env.ADMIN_SECRET, { expiresIn: '2h' });
+        return res.json({ token });
     }
 
-    res.status(401).json({ error: 'Credenciales incorrectas' })
-})
+    res.status(401).json({ error: 'Credenciales incorrectas' });
+});
+
 
 // 🛡️ Middleware de autenticación
 const auth = (req, res, next) => {
