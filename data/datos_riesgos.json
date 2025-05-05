@@ -6,7 +6,8 @@
     "contexto": "Zona de conflicto territorial con presencia de actores armados ilegales",
     "estructuras_zona": "Eln GAO-r",
     "lat": 2.459641,
-    "lng": -76.599377
+    "lng": -76.599377,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SANTANDER DE QUILICHAO",
@@ -15,7 +16,8 @@
     "contexto": "Ruta estratégica en disputa por narcotráfico",
     "estructuras_zona": "GAO-r estructura 30",
     "lat": 3.012876,
-    "lng": -76.4845
+    "lng": -76.4845,
+    "departamento": "Cauca"
   },
   {
     "municipio": "MIRANDA",
@@ -24,7 +26,8 @@
     "contexto": "Zona de enfrentamientos recientes entre disidencias y Ejército",
     "estructuras_zona": "Ejército, GAO-r",
     "lat": 3.243218,
-    "lng": -76.225
+    "lng": -76.225,
+    "departamento": "Cauca"
   },
   {
     "municipio": "TIMBIQUI",
@@ -33,7 +36,8 @@
     "contexto": "Zona costera con baja presencia institucional",
     "estructuras_zona": "Disidencias FARC, control social",
     "lat": 2.76606,
-    "lng": -77.654324
+    "lng": -77.654324,
+    "departamento": "Cauca"
   },
   {
     "municipio": "ARGELIA",
@@ -42,7 +46,8 @@
     "contexto": "Conflictos por rutas de narcotráfico",
     "estructuras_zona": "GAOR estructura 6",
     "lat": 2.25583,
-    "lng": -77.2492
+    "lng": -77.2492,
+    "departamento": "Cauca"
   },
   {
     "municipio": "BALBOA",
@@ -51,7 +56,8 @@
     "contexto": "Zona de paso esporádico de grupos armados",
     "estructuras_zona": "Presencia policial",
     "lat": 2.05056,
-    "lng": -77.2164
+    "lng": -77.2164,
+    "departamento": "Cauca"
   },
   {
     "municipio": "BOLIVAR",
@@ -60,7 +66,8 @@
     "contexto": "Conflictos comunitarios no armados",
     "estructuras_zona": "Autoridades municipales",
     "lat": 1.833888,
-    "lng": -76.961888
+    "lng": -76.961888,
+    "departamento": "Cauca"
   },
   {
     "municipio": "BUENOS AIRES",
@@ -69,7 +76,8 @@
     "contexto": "Presencia de grupos armados ilegales",
     "estructuras_zona": "GAOR, Policía, FFMM",
     "lat": 3.1195,
-    "lng": -76.6817
+    "lng": -76.6817,
+    "departamento": "Cauca"
   },
   {
     "municipio": "CAJIBIO",
@@ -78,7 +86,8 @@
     "contexto": "Zona sin presencia reportada de GAO",
     "estructuras_zona": "Estación de policía",
     "lat": 2.7358,
-    "lng": -76.5699
+    "lng": -76.5699,
+    "departamento": "Cauca"
   },
   {
     "municipio": "CALDONO",
@@ -87,7 +96,8 @@
     "contexto": "Disputa entre estructuras armadas",
     "estructuras_zona": "GAOR estructura 6, comunidades indígenas",
     "lat": 2.7875,
-    "lng": -76.4119
+    "lng": -76.4119,
+    "departamento": "Cauca"
   },
   {
     "municipio": "CALOTO",
@@ -96,7 +106,8 @@
     "contexto": "Zona de control armado",
     "estructuras_zona": "GAO-r estructura 6",
     "lat": 3.0343,
-    "lng": -76.4043
+    "lng": -76.4043,
+    "departamento": "Cauca"
   },
   {
     "municipio": "CORINTO",
@@ -105,7 +116,8 @@
     "contexto": "Disputas territoriales entre GAO",
     "estructuras_zona": "GAO-r, Policía, Ejército",
     "lat": 3.1748,
-    "lng": -76.2615
+    "lng": -76.2615,
+    "departamento": "Cauca"
   },
   {
     "municipio": "EL TAMBO",
@@ -114,7 +126,8 @@
     "contexto": "Presión a comerciantes rurales",
     "estructuras_zona": "GAOR estructura 30",
     "lat": 2.441,
-    "lng": -77.0163
+    "lng": -77.0163,
+    "departamento": "Cauca"
   },
   {
     "municipio": "FLORENCIA",
@@ -123,7 +136,8 @@
     "contexto": "Presencia institucional activa",
     "estructuras_zona": "Estación de Policía",
     "lat": 1.6922,
-    "lng": -77.0746
+    "lng": -77.0746,
+    "departamento": "Cauca"
   },
   {
     "municipio": "GUAPI",
@@ -132,7 +146,8 @@
     "contexto": "Zona costera con baja presencia institucional",
     "estructuras_zona": "GAO-r, fuerza pública naval",
     "lat": 2.5712,
-    "lng": -77.9065
+    "lng": -77.9065,
+    "departamento": "Cauca"
   },
   {
     "municipio": "INZA",
@@ -141,7 +156,8 @@
     "contexto": "Región montañosa con difícil acceso",
     "estructuras_zona": "GAO-r esporádico",
     "lat": 2.5554,
-    "lng": -76.0713
+    "lng": -76.0713,
+    "departamento": "Cauca"
   },
   {
     "municipio": "JAMBALO",
@@ -150,7 +166,8 @@
     "contexto": "Zona indígena en disputa territorial",
     "estructuras_zona": "GAO-r, Guardia Indígena",
     "lat": 2.7875,
-    "lng": -76.328
+    "lng": -76.328,
+    "departamento": "Cauca"
   },
   {
     "municipio": "LA SIERRA",
@@ -159,7 +176,8 @@
     "contexto": "Poca o nula presencia de grupos ilegales",
     "estructuras_zona": "Autoridades locales",
     "lat": 2.1756,
-    "lng": -76.7229
+    "lng": -76.7229,
+    "departamento": "Cauca"
   },
   {
     "municipio": "LA VEGA",
@@ -168,7 +186,8 @@
     "contexto": "Zona de producción agrícola",
     "estructuras_zona": "Estación de Policía",
     "lat": 2.1833,
-    "lng": -76.776
+    "lng": -76.776,
+    "departamento": "Cauca"
   },
   {
     "municipio": "LOPEZ DE MICAY",
@@ -177,7 +196,8 @@
     "contexto": "Difícil acceso por vía terrestre",
     "estructuras_zona": "GAO-r, estructura 30",
     "lat": 2.7442,
-    "lng": -77.6385
+    "lng": -77.6385,
+    "departamento": "Cauca"
   },
   {
     "municipio": "MERCADERES",
@@ -186,7 +206,8 @@
     "contexto": "Presión armada en zonas rurales",
     "estructuras_zona": "GAO-r",
     "lat": 1.7979,
-    "lng": -77.1693
+    "lng": -77.1693,
+    "departamento": "Cauca"
   },
   {
     "municipio": "MORALES",
@@ -195,7 +216,8 @@
     "contexto": "Disputa entre estructuras armadas",
     "estructuras_zona": "GAO-r, autoridades locales",
     "lat": 2.7512,
-    "lng": -76.6234
+    "lng": -76.6234,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PADILLA",
@@ -204,7 +226,8 @@
     "contexto": "Zona con presencia policial estable",
     "estructuras_zona": "Policía Nacional",
     "lat": 3.2183,
-    "lng": -76.3123
+    "lng": -76.3123,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PAEZ",
@@ -213,7 +236,8 @@
     "contexto": "Zona con fuerte presencia ancestral",
     "estructuras_zona": "Guardia Indígena, GAO-r",
     "lat": 2.6497,
-    "lng": -75.9812
+    "lng": -75.9812,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PATIA",
@@ -222,7 +246,8 @@
     "contexto": "Alta vulnerabilidad institucional",
     "estructuras_zona": "GAOR estructura 6",
     "lat": 2.0633,
-    "lng": -77.0456
+    "lng": -77.0456,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PIAMONTE",
@@ -231,7 +256,8 @@
     "contexto": "Área limítrofe con Putumayo",
     "estructuras_zona": "Presencia esporádica de GAO",
     "lat": 1.1007,
-    "lng": -76.3494
+    "lng": -76.3494,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PIENDAMO",
@@ -240,7 +266,8 @@
     "contexto": "Zona de paso entre Popayán y el norte",
     "estructuras_zona": "Policía, Ejército",
     "lat": 2.7169,
-    "lng": -76.5353
+    "lng": -76.5353,
+    "departamento": "Cauca"
   },
   {
     "municipio": "PUERTO TEJADA",
@@ -249,7 +276,8 @@
     "contexto": "Municipio estratégico por cercanía al Valle",
     "estructuras_zona": "GAO-r, Policía Nacional",
     "lat": 3.2356,
-    "lng": -76.4191
+    "lng": -76.4191,
+    "departamento": "Cauca"
   },
   {
     "municipio": "ROSAS",
@@ -258,7 +286,8 @@
     "contexto": "Zona afectada por derrumbes naturales más que conflicto",
     "estructuras_zona": "Autoridades municipales",
     "lat": 1.9611,
-    "lng": -76.7439
+    "lng": -76.7439,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SAN SEBASTIAN",
@@ -267,7 +296,8 @@
     "contexto": "Riesgos por cercanía a zonas de influencia armada",
     "estructuras_zona": "Policía Nacional",
     "lat": 2.0966,
-    "lng": -76.7896
+    "lng": -76.7896,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SANTA ROSA",
@@ -276,7 +306,8 @@
     "contexto": "Municipio alejado del conflicto actual",
     "estructuras_zona": "Autoridades locales",
     "lat": 1.8535,
-    "lng": -76.7752
+    "lng": -76.7752,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SILVIA",
@@ -285,7 +316,8 @@
     "contexto": "Zona de resguardos con tensiones sociales",
     "estructuras_zona": "Guardia Indígena, Policía",
     "lat": 2.6201,
-    "lng": -76.3804
+    "lng": -76.3804,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SOTARA",
@@ -294,7 +326,8 @@
     "contexto": "Zona rural de bajo impacto",
     "estructuras_zona": "Presencia municipal",
     "lat": 2.3162,
-    "lng": -76.6921
+    "lng": -76.6921,
+    "departamento": "Cauca"
   },
   {
     "municipio": "SUAREZ",
@@ -303,7 +336,8 @@
     "contexto": "Foco de conflicto armado y social",
     "estructuras_zona": "GAO-r, Ejército",
     "lat": 2.9475,
-    "lng": -76.7125
+    "lng": -76.7125,
+    "departamento": "Cauca"
   },
   {
     "municipio": "TIMBIO",
@@ -312,7 +346,8 @@
     "contexto": "Zona intermedia entre municipios de alto riesgo",
     "estructuras_zona": "Policía Nacional",
     "lat": 2.3362,
-    "lng": -76.6812
+    "lng": -76.6812,
+    "departamento": "Cauca"
   },
   {
     "municipio": "TORIBIO",
@@ -321,7 +356,8 @@
     "contexto": "Conflicto con comunidades indígenas",
     "estructuras_zona": "Guardia Indígena, GAO-r",
     "lat": 2.9512,
-    "lng": -76.2606
+    "lng": -76.2606,
+    "departamento": "Cauca"
   },
   {
     "municipio": "TOTORO",
@@ -330,7 +366,8 @@
     "contexto": "Tranquilidad y baja presión armada",
     "estructuras_zona": "Autoridades locales",
     "lat": 2.5338,
-    "lng": -76.4126
+    "lng": -76.4126,
+    "departamento": "Cauca"
   },
   {
     "municipio": "VILLA RICA",
@@ -339,7 +376,8 @@
     "contexto": "Zona industrial con riesgos colaterales",
     "estructuras_zona": "Policía, Ejército",
     "lat": 3.1723,
-    "lng": -76.4813
+    "lng": -76.4813,
+    "departamento": "Cauca"
   },
   {
     "departamento": "Antioquia",
