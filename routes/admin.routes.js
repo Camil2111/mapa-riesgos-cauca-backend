@@ -67,5 +67,14 @@ router.post('/datos-riesgos', auth, (req, res) => {
     }
 })
 
+router.get('/debug/env', (req, res) => {
+    res.json({
+        admin_email: process.env.ADMIN_EMAIL,
+        admin_password: process.env.ADMIN_PASSWORD,
+        mensaje: 'Este backend SÍ está leyendo .env y SÍ está activo'
+    });
+});
+
+
 export default router
 

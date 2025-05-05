@@ -33,7 +33,7 @@ app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
 app.use('/api', scrapingRoutes);
 app.use('/debug', debugRoutes)
-app.use('/api/admin', adminRoutes)
+app.use('/api', adminRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
