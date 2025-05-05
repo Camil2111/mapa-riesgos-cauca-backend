@@ -14,6 +14,7 @@ const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123'
 
 // 🟢 Login (usando email y password)
 router.post('/auth/login', (req, res) => {
+    console.log('🧾 Body recibido en login:', req.body); // esto nos dirá si ya lo lee
     const { email, password } = req.body;
 
     console.log('🧪 Login recibido ->', email, password);
