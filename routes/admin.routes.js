@@ -74,6 +74,10 @@ router.get('/debug/env', (req, res) => {
         mensaje: 'Este backend SÍ está leyendo .env y SÍ está activo'
     });
 });
+// 🔍 Ruta de prueba para verificar que /auth/login está activa
+router.get('/auth/login', (req, res) => {
+    res.json({ mensaje: '✅ Esta ruta GET /auth/login existe en producción' });
+});
 
 
 export default router
