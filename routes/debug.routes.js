@@ -1,18 +1,28 @@
-import express from 'express';
-import Estadistica from '../models/estadistica.model.js';
+import express from 'express'
+import runScraperRCN from '../scrapers/rcnScraper.js'
+import runScraperRSS from '../scrapers/rssScraper.js'
 
-const router = express.Router();
+const router = express.Router()
 
-// ⚠️ Ruta de depuración: elimina TODAS las estadísticas
-router.get('/borrar-estadisticas', async (req, res) => {
+// 🧪 Probar scraper de RCN Pacífico
+router.get('/ejecutar-rss', async (req, res) => {
     try {
-        const result = await Estadistica.deleteMany({});
-        console.log(`🧹 ${result.deletedCount} estadísticas eliminadas.`);
-        res.send('🧹 Estadísticas eliminadas.');
-    } catch (error) {
-        console.error('❌ Error al borrar estadísticas:', error);
-        res.status(500).send('Error al borrar estadísticas.');
+        const resultado = await runScraperRSS()
+        res.json(resultado)
+    } catch (err) {
+        console.error('❌ Error en RSS scraper:', err)
+        res.status(500).json({ error: err.message })
     }
-});
+})
 
-export default router;
+// 🧪 Verificar que el sistema esté en línea
+router.get('/salud', (req, res) => {
+    res.json({
+        mensaje: '✅ Ruta /debug activa y lista',
+        hora: new Date().toLocaleString(),
+    })
+})
+
+export default router
+
+

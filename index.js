@@ -9,7 +9,6 @@ import scrapingRoutes from './routes/scraping.routes.js';
 import debugRoutes from './routes/debug.routes.js';
 import adminRoutes from './routes/admin.routes.js';
 import publicRoutes from './routes/public.routes.js'
-
 import './cron/scraperCron.js';
 
 dotenv.config();
