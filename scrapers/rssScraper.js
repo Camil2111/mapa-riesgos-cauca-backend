@@ -1,4 +1,3 @@
-// scrapers/rssScraper.js
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import Evento from '../models/evento.model.js'
@@ -15,8 +14,10 @@ const KEYWORDS = ['conflicto', 'gao', 'disidencias', 'atentado', 'violencia', 'a
 
 const runScraperRSS = async () => {
     const eventosInsertados = []
+    let totalProcesados = 0
+    let descartados = 0
 
-    for (let depto of DEPARTAMENTOS) {
+    for (const depto of DEPARTAMENTOS) {
         const url = `https://news.google.com/rss/search?q=${encodeURIComponent(depto.nombre + ' conflicto')}`
         const { data } = await axios.get(url, {
             headers: { 'User-Agent': 'Mozilla/5.0' }
@@ -25,35 +26,66 @@ const runScraperRSS = async () => {
         const $ = cheerio.load(data, { xmlMode: true })
         const items = $('item')
 
-        for (let i = 0; i < Math.min(items.length, 8); i++) {
+        for (let i = 0; i < Math.min(items.length, 10); i++) {
             const item = items[i]
             const titulo = $(item).find('title').text()
             const link = $(item).find('link').text()
+            const descripcion = $(item).find('description').text()
+            totalProcesados++
 
-            if (KEYWORDS.some(k => titulo.toLowerCase().includes(k))) {
-                const existe = await Evento.findOne({ descripcion: titulo })
-                if (!existe) {
-                    const nuevo = await Evento.create({
-                        municipio: depto.nombre,
-                        departamento: depto.nombre,
-                        nivel_riesgo: 'Moderado',
-                        fecha: new Date(),
-                        descripcion: titulo,
-                        vereda: 'No especificado',
-                        tipo: 'Noticia',
-                        lat: depto.lat,
-                        lng: depto.lng
+            const textoRSS = `${titulo} ${descripcion}`.toLowerCase()
+
+            // Si el resumen tiene potencial
+            if (KEYWORDS.some(k => textoRSS.includes(k))) {
+                let textoCompleto = textoRSS
+
+                // Intentar obtener contenido completo del artículo
+                try {
+                    const htmlNoticia = await axios.get(link, {
+                        headers: { 'User-Agent': 'Mozilla/5.0' }
                     })
-                    eventosInsertados.push(nuevo)
+                    const $noticia = cheerio.load(htmlNoticia.data)
+                    const cuerpo = $noticia('p').text().toLowerCase()
+                    textoCompleto += ` ${cuerpo}`
+                } catch (err) {
+                    console.warn(`⚠️ No se pudo acceder a: ${link}`)
                 }
+
+                // Validar de nuevo con cuerpo completo
+                const tagsDetectados = KEYWORDS.filter(k => textoCompleto.includes(k))
+                if (tagsDetectados.length > 0) {
+                    const yaExiste = await Evento.findOne({ link })
+                    if (!yaExiste) {
+                        const nuevo = await Evento.create({
+                            municipio: 'No especificado',
+                            departamento: depto.nombre,
+                            nivel_riesgo: 'Moderado',
+                            fecha: new Date(),
+                            descripcion: titulo,
+                            tipo: 'Noticia RSS',
+                            fuente: 'Google News RSS',
+                            vereda: 'No especificado',
+                            tags: tagsDetectados,
+                            link,
+                            lat: depto.lat,
+                            lng: depto.lng
+                        })
+                        eventosInsertados.push(nuevo)
+                    }
+                } else {
+                    descartados++
+                }
+            } else {
+                descartados++
             }
         }
     }
 
-    console.log(`✅ RSS: Insertados ${eventosInsertados.length} eventos`)
+    console.log(`✅ RSS BOT: ${eventosInsertados.length} insertados | ${descartados} descartados | ${totalProcesados} procesados`)
     return {
-        departamentos: DEPARTAMENTOS.length,
         insertados: eventosInsertados.length,
+        descartados,
+        procesados: totalProcesados,
         detalles: eventosInsertados.map(e => e.descripcion)
     }
 }

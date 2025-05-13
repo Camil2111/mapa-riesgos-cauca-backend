@@ -1,28 +1,26 @@
-// backend/routes/riesgo.routes.js
 import express from 'express'
-import Riesgo from '../models/riesgo.model.js'
+import Evento from '../models/evento.model.js'
 
 const router = express.Router()
 
-// Ruta para obtener todos los riesgos
-router.get('/', async (req, res) => {
+// Ruta para buscar riesgo por ciudad (de uso opcional)
+router.get('/:ciudad', async (req, res) => {
     try {
-        const riesgos = await Riesgo.find()
-        res.json(riesgos)
-    } catch (err) {
-        res.status(500).json({ message: 'Error al obtener los datos' })
-    }
-})
+        const ciudad = req.params.ciudad
+        const resultado = await Evento.findOne({
+            municipio: new RegExp(ciudad, 'i')
+        })
 
-// Ruta para filtrar por municipio
-router.get('/:municipio', async (req, res) => {
-    try {
-        const { municipio } = req.params
-        const riesgos = await Riesgo.find({ municipio: { $regex: new RegExp(municipio, 'i') } })
-        res.json(riesgos)
-    } catch (err) {
-        res.status(500).json({ message: 'Error al filtrar los datos' })
+        if (!resultado) {
+            return res.status(404).json({ error: 'No hay datos para esta ciudad.' })
+        }
+
+        res.json(resultado)
+    } catch (error) {
+        console.error('❌ Error consultando riesgo:', error)
+        res.status(500).json({ error: 'Error interno del servidor' })
     }
 })
 
 export default router
+

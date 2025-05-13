@@ -6,6 +6,7 @@ import runScraperAlertas from '../scrapers/alertasHumanitariasScraper.js'
 import runScraperPaisValle from '../scrapers/paisValleScraper.js'
 import runScraperMinuto30 from '../scrapers/minuto30Scraper.js'
 import runScraperDiarioSur from '../scrapers/diarioSurScraper.js'
+import runScraperRSS from '../scrapers/rssScraper.js'
 
 const router = express.Router()
 
@@ -37,6 +38,16 @@ router.get('/scrap/antioquia', async (req, res) => {
 router.get('/scrap/narino', async (req, res) => {
     await runScraperDiarioSur()
     res.json({ ok: true, fuente: 'Diario del Sur ejecutado (Nariño)' })
+})
+
+router.get('/rss', async (req, res) => {
+    try {
+        const resultado = await runScraperRSS()
+        res.json({ ok: true, ...resultado })
+    } catch (error) {
+        console.error('❌ Error ejecutando RSS scraper:', error)
+        res.status(500).json({ ok: false, error: error.message })
+    }
 })
 
 export default router

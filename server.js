@@ -2,38 +2,39 @@ import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import dotenv from 'dotenv'
-const estadisticasRoutes = require('./routes/estadisticas');
-app.use('/api/estadisticas', estadisticasRoutes);
+
+import scrapingRoutes from './routes/scraping.routes.js'
+import estadisticasRoutes from './routes/estadisticas.js'
+import riesgoRoutes from './routes/riesgo.routes.js'
 
 dotenv.config()
+
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-// Esquema de riesgo
-const RiesgoSchema = new mongoose.Schema({
-    ciudad: String,
-    nivel: String,
-    recomendacion: String
+// Middleware de monitoreo (opcional)
+app.use((req, res, next) => {
+    console.log(`📩 ${req.method} ${req.path}`)
+    next()
 })
 
-const Riesgo = mongoose.model("Riesgo", RiesgoSchema)
+// Rutas
+app.use('/api/scrapers', scrapingRoutes)
+app.use('/api/estadisticas', estadisticasRoutes)
+app.use('/api/riesgo', riesgoRoutes)
 
-// Ruta para consultar riesgo
-app.get('/api/riesgo/:ciudad', async (req, res) => {
-    const ciudad = req.params.ciudad
-    const resultado = await Riesgo.findOne({ ciudad: new RegExp(ciudad, "i") })
-    if (!resultado) {
-        return res.status(404).json({ error: "No hay datos para esta ciudad." })
-    }
-    res.json(resultado)
+// Conexión a Mongo y arranque
+const PORT = process.env.PORT || 3000
+
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
-
-// Conectar a MongoDB y arrancar el server
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
-        app.listen(process.env.PORT, () => {
-            console.log(`Servidor escuchando en puerto ${process.env.PORT}`)
+        app.listen(PORT, () => {
+            console.log(`🚀 Servidor escuchando en puerto ${PORT}`)
         })
     })
-    .catch(err => console.log(err))
+    .catch(err => console.error('❌ Error conectando a Mongo:', err))
+
