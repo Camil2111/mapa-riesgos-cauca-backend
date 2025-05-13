@@ -24,6 +24,7 @@ app.use('/api/scrapers', scrapingRoutes)
 app.use('/api/estadisticas', estadisticasRoutes)
 app.use('/api/riesgo', riesgoRoutes)
 
+
 // Conexión a Mongo y arranque
 const PORT = process.env.PORT || 3000
 

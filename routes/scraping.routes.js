@@ -40,7 +40,7 @@ router.get('/scrap/narino', async (req, res) => {
     res.json({ ok: true, fuente: 'Diario del Sur ejecutado (Nariño)' })
 })
 
-router.get('/rss', async (req, res) => {
+router.get('/scrap/rss', async (req, res) => {
     try {
         const resultado = await runScraperRSS()
         res.json({ ok: true, ...resultado })
