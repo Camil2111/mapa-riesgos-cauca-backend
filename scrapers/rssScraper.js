@@ -20,8 +20,13 @@ const runScraperRSS = async () => {
     for (const depto of DEPARTAMENTOS) {
         const url = `https://news.google.com/rss/search?q=${encodeURIComponent(depto.nombre + ' conflicto')}`
         const { data } = await axios.get(url, {
-            headers: { 'User-Agent': 'Mozilla/5.0' }
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+            }
+
         })
+        console.log(`🧪 Revisando RSS de: ${depto.nombre} -> ${url}`)
+        console.log('🧪 Respuesta RSS:', data.slice(0, 500)) // solo los primeros 500 caracteres
 
         const $ = cheerio.load(data, { xmlMode: true })
         const items = $('item')
