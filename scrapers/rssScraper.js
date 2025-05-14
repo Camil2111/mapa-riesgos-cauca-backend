@@ -7,7 +7,7 @@ const parser = new Parser()
 
 const RSS_FEEDS = [
     {
-        url: 'https://www.elespectador.com/rss/judicial/',
+        url: 'https://www.elespectador.com/judicial/feed/',
         fuente: 'El Espectador Judicial',
         departamento: 'COLOMBIA',
         lat: 4.57,
