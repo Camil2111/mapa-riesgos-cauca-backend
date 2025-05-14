@@ -1,42 +1,50 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
-import Evento from '../models/evento.model.js'
+import { insertarEvento } from './utils/insertEvento.js'
+
+const URL = 'https://www.elpais.com.co/judicial/'
 
 const runScraperPaisValle = async () => {
-    const url = 'https://www.elpais.com.co/judicial'
-    const { data } = await axios.get(url)
+    const eventos = []
+    const { data } = await axios.get(URL)
     const $ = cheerio.load(data)
-    const noticias = []
 
-    $('a.card-noticia').each((i, el) => {
-        const titulo = $(el).find('h2').text().trim()
-        const link = $(el).attr('href')
-        if (titulo && link && !link.includes('https')) {
-            noticias.push({
-                titulo,
-                link: `https://www.elpais.com.co${link}`
+    $('.listing__content').each((_, elem) => {
+        const title = $(elem).find('a').text().trim()
+        const link = 'https://www.elpais.com.co' + $(elem).find('a').attr('href')
+        const texto = title.toLowerCase()
+        const tags = ['conflicto', 'violencia', 'bloqueo', 'gao'].filter(k => texto.includes(k))
+
+        if (tags.length > 0 && link) {
+            insertarEvento({
+                municipio: 'No especificado',
+                departamento: 'VALLE DEL CAUCA',
+                nivel_riesgo: 'Moderado',
+                fecha: new Date(),
+                descripcion: title,
+                tipo: 'Noticia web',
+                fuente: 'El País Judicial',
+                vereda: 'No especificado',
+                tags,
+                lat: 3.45,
+                lng: -76.53,
+                link
+            }).then(evento => {
+                if (evento) eventos.push(evento)
             })
         }
     })
 
-    for (let noticia of noticias.slice(0, 5)) {
-        const existe = await Evento.findOne({ descripcion: noticia.titulo })
-        if (!existe) {
-            await Evento.create({
-                municipio: 'CALI',
-                departamento: 'VALLE DEL CAUCA',
-                nivel_riesgo: 'Medio',
-                fecha: new Date(),
-                descripcion: noticia.titulo,
-                vereda: 'No especificado',
-                tipo: 'Noticia',
-                lat: 3.4516,
-                lng: -76.5320
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve({
+                fuente: 'El País Valle',
+                insertados: eventos.length,
+                detalles: eventos.map(e => e.descripcion)
             })
-        }
-    }
-
-    console.log(`✅ El País Valle: revisadas ${noticias.length} noticias.`)
+        }, 3000)
+    })
 }
 
 export default runScraperPaisValle
+

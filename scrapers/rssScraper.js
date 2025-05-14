@@ -1,13 +1,15 @@
-import axios from 'axios'
-import * as cheerio from 'cheerio'
+import Parser from 'rss-parser'
 import Evento from '../models/evento.model.js'
 
-const DEPARTAMENTOS = [
-    { nombre: 'CAUCA', lat: 2.45, lng: -76.61 },
-    { nombre: 'VALLE DEL CAUCA', lat: 3.45, lng: -76.53 },
-    { nombre: 'NARIÑO', lat: 1.23, lng: -77.28 },
-    { nombre: 'ANTIOQUIA', lat: 6.25, lng: -75.56 },
-    { nombre: 'CHOCO', lat: 5.27, lng: -76.67 },
+const parser = new Parser()
+
+const FEEDS = [
+    {
+        url: 'https://www.elespectador.com/rss/judicial/',
+        departamento: 'COLOMBIA',
+        lat: 4.57,
+        lng: -74.29
+    }
 ]
 
 const KEYWORDS = ['conflicto', 'gao', 'disidencias', 'atentado', 'violencia', 'armado', 'bloqueo', 'enfrentamiento', 'explosivo']
@@ -17,68 +19,33 @@ const runScraperRSS = async () => {
     let totalProcesados = 0
     let descartados = 0
 
-    for (const depto of DEPARTAMENTOS) {
-        const url = `https://news.google.com/rss/search?q=${encodeURIComponent(depto.nombre + ' conflicto')}`
-        const { data } = await axios.get(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
-            }
+    for (const feed of FEEDS) {
+        const { items } = await parser.parseURL(feed.url)
 
-        })
-        console.log(`🧪 Revisando RSS de: ${depto.nombre} -> ${url}`)
-        console.log('🧪 Respuesta RSS:', data.slice(0, 500)) // solo los primeros 500 caracteres
-
-        const $ = cheerio.load(data, { xmlMode: true })
-        const items = $('item')
-
-        for (let i = 0; i < Math.min(items.length, 10); i++) {
-            const item = items[i]
-            const titulo = $(item).find('title').text()
-            const link = $(item).find('link').text()
-            const descripcion = $(item).find('description').text()
+        for (const item of items.slice(0, 15)) {
             totalProcesados++
 
-            const textoRSS = `${titulo} ${descripcion}`.toLowerCase()
+            const texto = `${item.title} ${item.contentSnippet || ''}`.toLowerCase()
+            const tagsDetectados = KEYWORDS.filter(k => texto.includes(k))
 
-            // Si el resumen tiene potencial
-            if (KEYWORDS.some(k => textoRSS.includes(k))) {
-                let textoCompleto = textoRSS
-
-                // Intentar obtener contenido completo del artículo
-                try {
-                    const htmlNoticia = await axios.get(link, {
-                        headers: { 'User-Agent': 'Mozilla/5.0' }
+            if (tagsDetectados.length > 0) {
+                const yaExiste = await Evento.findOne({ link: item.link })
+                if (!yaExiste) {
+                    const nuevo = await Evento.create({
+                        municipio: 'No especificado',
+                        departamento: feed.departamento,
+                        nivel_riesgo: 'Moderado',
+                        fecha: new Date(item.pubDate),
+                        descripcion: item.title,
+                        tipo: 'Noticia RSS',
+                        fuente: 'El Espectador RSS',
+                        vereda: 'No especificado',
+                        tags: tagsDetectados,
+                        link: item.link,
+                        lat: feed.lat,
+                        lng: feed.lng
                     })
-                    const $noticia = cheerio.load(htmlNoticia.data)
-                    const cuerpo = $noticia('p').text().toLowerCase()
-                    textoCompleto += ` ${cuerpo}`
-                } catch (err) {
-                    console.warn(`⚠️ No se pudo acceder a: ${link}`)
-                }
-
-                // Validar de nuevo con cuerpo completo
-                const tagsDetectados = KEYWORDS.filter(k => textoCompleto.includes(k))
-                if (tagsDetectados.length > 0) {
-                    const yaExiste = await Evento.findOne({ link })
-                    if (!yaExiste) {
-                        const nuevo = await Evento.create({
-                            municipio: 'No especificado',
-                            departamento: depto.nombre,
-                            nivel_riesgo: 'Moderado',
-                            fecha: new Date(),
-                            descripcion: titulo,
-                            tipo: 'Noticia RSS',
-                            fuente: 'Google News RSS',
-                            vereda: 'No especificado',
-                            tags: tagsDetectados,
-                            link,
-                            lat: depto.lat,
-                            lng: depto.lng
-                        })
-                        eventosInsertados.push(nuevo)
-                    }
-                } else {
-                    descartados++
+                    eventosInsertados.push(nuevo)
                 }
             } else {
                 descartados++
@@ -86,7 +53,7 @@ const runScraperRSS = async () => {
         }
     }
 
-    console.log(`✅ RSS BOT: ${eventosInsertados.length} insertados | ${descartados} descartados | ${totalProcesados} procesados`)
+    console.log(`✅ RSS DEFINITIVO: ${eventosInsertados.length} insertados | ${descartados} descartados | ${totalProcesados} procesados`)
     return {
         insertados: eventosInsertados.length,
         descartados,

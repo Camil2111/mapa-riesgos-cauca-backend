@@ -1,54 +1,51 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
-import Evento from '../models/evento.model.js'
+import { insertarEvento } from './utils/insertEvento.js'
 
-const runScraperRCN = async () => {
-    const url = 'https://www.rcnradio.com/colombia/pacifico'
-    const { data } = await axios.get(url, {
-        headers: {
-            'User-Agent': 'Mozilla/5.0'
-        }
-    })
+const URL = 'https://proclamadelcauca.com/category/judiciales/'
 
+const runScraperProclama = async () => {
+    const eventos = []
+    const { data } = await axios.get(URL)
     const $ = cheerio.load(data)
-    const noticias = []
 
-    $('.article-title a').each((i, el) => {
-        const titulo = $(el).text().trim()
-        const link = $(el).attr('href')
-        if (titulo.toLowerCase().includes('cauca') && titulo && link) {
-            noticias.push({ titulo, link })
-        }
-    })
+    $('.jeg_postblock_content').each((_, elem) => {
+        const title = $(elem).find('.jeg_post_title a').text().trim()
+        const link = $(elem).find('.jeg_post_title a').attr('href')
+        const texto = title.toLowerCase()
+        const tags = ['conflicto', 'violencia', 'bloqueo', 'gao', 'armado'].filter(k => texto.includes(k))
 
-    const guardados = []
-
-    for (let noticia of noticias.slice(0, 5)) {
-        const existe = await Evento.findOne({ descripcion: noticia.titulo })
-        if (!existe) {
-            const nuevo = await Evento.create({
-                municipio: 'CAUCA',
+        if (tags.length > 0 && link) {
+            insertarEvento({
+                municipio: 'No especificado',
                 departamento: 'CAUCA',
                 nivel_riesgo: 'Moderado',
                 fecha: new Date(),
-                descripcion: noticia.titulo,
+                descripcion: title,
+                tipo: 'Noticia web',
+                fuente: 'Proclama del Cauca',
                 vereda: 'No especificado',
-                tipo: 'Noticia',
+                tags,
                 lat: 2.45,
-                lng: -76.61
+                lng: -76.61,
+                link
+            }).then(evento => {
+                if (evento) eventos.push(evento)
             })
-            guardados.push(nuevo)
         }
-    }
+    })
 
-    console.log(`✅ RCN: revisadas ${noticias.length}, insertadas ${guardados.length}`)
-
-    return {
-        totalEncontradas: noticias.length,
-        nuevasInsertadas: guardados.length,
-        detalles: guardados.map(e => e.descripcion)
-    }
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve({
+                fuente: 'Proclama del Cauca',
+                insertados: eventos.length,
+                detalles: eventos.map(e => e.descripcion)
+            })
+        }, 3000)
+    })
 }
 
-export default runScraperRCN
+export default runScraperProclama
+
 
