@@ -38,3 +38,7 @@ const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`🚀 Servidor corriendo en puerto ${PORT}`)
 })
+
+app.get('/api/test-riesgos', (req, res) => {
+    res.json({ ok: true, mensaje: '✅ Render SÍ levantó server.js' })
+})
