@@ -8,14 +8,17 @@ const parser = new Parser()
 const RSS_FEEDS = [
     {
         url: 'https://www.elespectador.com/rss/judicial/',
-        fuente: 'El Espectador',
+        fuente: 'El Espectador Judicial',
         departamento: 'COLOMBIA',
         lat: 4.57,
         lng: -74.29
     }
 ]
 
-const KEYWORDS = ['conflicto', 'gao', 'disidencias', 'violencia', 'bloqueo', 'atentado', 'explosión', 'enfrentamiento', 'armado']
+const KEYWORDS = [
+    'conflicto', 'gao', 'disidencias', 'violencia',
+    'bloqueo', 'atentado', 'explosión', 'enfrentamiento', 'armado'
+]
 
 const nivelPorTags = (tags) => {
     if (tags.includes('explosión') || tags.includes('atentado')) return 'Crítico'
@@ -37,14 +40,24 @@ const runScraperRSS = async () => {
 
             try {
                 const noticia = await axios.get(item.link, {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0'
-                    }
+                    headers: { 'User-Agent': 'Mozilla/5.0' },
+                    validateStatus: status => status < 400 // ignora respuestas con error 404
                 })
 
+                if (!noticia || !noticia.data) {
+                    console.warn('⚠️ Sin contenido, omitiendo:', item.link)
+                    descartados++
+                    continue
+                }
+
                 const html = noticia.data.toLowerCase()
-                if (html.includes('página no encontrada') || html.includes('error 404') || html.includes('no se encuentra en nuestro sistema')) {
-                    console.warn('⚠️ Página rota, saltando:', item.link)
+
+                if (
+                    html.includes('página no encontrada') ||
+                    html.includes('error 404') ||
+                    html.includes('no se encuentra en nuestro sistema')
+                ) {
+                    console.warn('⚠️ Página rota o vacía, omitiendo:', item.link)
                     descartados++
                     continue
                 }
@@ -75,7 +88,7 @@ const runScraperRSS = async () => {
                     descartados++
                 }
             } catch (err) {
-                console.warn('❌ Error accediendo a:', item.link)
+                console.warn('❌ Error accediendo a:', item.link, '-', err.message)
                 descartados++
             }
         }
@@ -93,4 +106,3 @@ const runScraperRSS = async () => {
 }
 
 export default runScraperRSS
-
