@@ -6,6 +6,7 @@ import dotenv from 'dotenv'
 import scrapingRoutes from './routes/scraping.routes.js'
 import estadisticasRoutes from './routes/estadisticas.js'
 import riesgoRoutes from './routes/riesgo.routes.js'
+import riesgosAdicionalesRoutes from './routes/riesgosAdicionales.routes.js'
 
 dotenv.config()
 
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
 app.use('/api/scrapers', scrapingRoutes)
 app.use('/api/estadisticas', estadisticasRoutes)
 app.use('/api/riesgo', riesgoRoutes)
+app.use('/api', riesgosAdicionalesRoutes)
 
 
 // Conexión a Mongo y arranque
