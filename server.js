@@ -3,9 +3,11 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
+// Rutas
 import scrapingRoutes from './routes/scraping.routes.js'
 import estadisticasRoutes from './routes/estadisticas.js'
-import riesgoRoutes from './routes/riesgo.routes.js'
+import adminRoutes from './routes/admin.routes.js'
+import publicRoutes from './routes/public.routes.js'
 import riesgosAdicionalesRoutes from './routes/riesgosAdicionales.routes.js'
 
 dotenv.config()
@@ -14,30 +16,25 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-// Middleware de monitoreo (opcional)
-app.use((req, res, next) => {
-    console.log(`📩 ${req.method} ${req.path}`)
-    next()
-})
+// Conexión a MongoDB
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log('✅ Conectado a MongoDB'))
+    .catch(err => console.error('❌ Error conectando a MongoDB:', err))
 
-// Rutas
-app.use('/api/scrapers', scrapingRoutes)
-app.use('/api/estadisticas', estadisticasRoutes)
-app.use('/api/riesgo', riesgoRoutes)
+// Rutas públicas y admin
+app.use('/api', publicRoutes)
+app.use('/api', adminRoutes)
+app.use('/api', scrapingRoutes)
+app.use('/api', estadisticasRoutes)
 app.use('/api', riesgosAdicionalesRoutes)
 
-
-// Conexión a Mongo y arranque
-const PORT = process.env.PORT || 3000
-
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+// Ruta de prueba base
+app.get('/', (req, res) => {
+    res.send('🚀 Backend Mapa Riesgos activo')
 })
-    .then(() => {
-        app.listen(PORT, () => {
-            console.log(`🚀 Servidor escuchando en puerto ${PORT}`)
-        })
-    })
-    .catch(err => console.error('❌ Error conectando a Mongo:', err))
 
+// Escucha del servidor
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+    console.log(`🚀 Servidor corriendo en puerto ${PORT}`)
+})
