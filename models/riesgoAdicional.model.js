@@ -12,4 +12,5 @@ const RiesgoAdicionalSchema = new mongoose.Schema({
     tags: [String]
 })
 
-export default mongoose.model('RiesgoAdicional', RiesgoAdicionalSchema)
+export default mongoose.model('RiesgoAdicional', RiesgoAdicionalSchema, 'riesgoadicionals')
+
