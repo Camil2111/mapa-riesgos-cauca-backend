@@ -11,34 +11,28 @@ import publicRoutes from './routes/public.routes.js'
 import riesgosAdicionalesRoutes from './routes/riesgosAdicionales.routes.js'
 
 dotenv.config()
-
 const app = express()
+
 app.use(cors())
 app.use(express.json())
 
-// Conexión a MongoDB
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('✅ Conectado a MongoDB'))
-    .catch(err => console.error('❌ Error conectando a MongoDB:', err))
-
-// Rutas públicas y admin
+// Rutas API
 app.use('/api', publicRoutes)
 app.use('/api', adminRoutes)
 app.use('/api', scrapingRoutes)
 app.use('/api', estadisticasRoutes)
 app.use('/api', riesgosAdicionalesRoutes)
 
+// Conexión a MongoDB
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        app.listen(process.env.PORT || 3000, () => {
+            console.log(`🚀 Servidor backend listo en puerto ${process.env.PORT || 3000}`)
+        })
+    })
+    .catch(err => console.error('❌ Error conectando a MongoDB:', err.message))
+
 // Ruta de prueba base
 app.get('/', (req, res) => {
     res.send('🚀 Backend Mapa Riesgos activo')
-})
-
-// Escucha del servidor
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-    console.log(`🚀 Servidor corriendo en puerto ${PORT}`)
-})
-
-app.get('/api/test-riesgos', (req, res) => {
-    res.json({ ok: true, mensaje: '✅ Render SÍ levantó server.js' })
 })

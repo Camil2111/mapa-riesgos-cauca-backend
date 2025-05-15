@@ -6,7 +6,7 @@ const router = express.Router()
 
 // Obtener todos los riesgos
 router.get('/riesgos-adicionales', async (req, res) => {
-    const datos = await RiesgoAdicional.find()
+    const riesgos = await RiesgoAdicional.find()
     res.json(datos)
 })
 
