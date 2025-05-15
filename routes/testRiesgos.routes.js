@@ -1,8 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import auth from '../middleware/auth.js'
 
-console.log('✅ RUTA riesgosMongo.routes.js ACTIVADA')
+console.log('📥 CARGADA testRiesgos.routes.js ✅')
 
 const router = express.Router()
 
@@ -12,12 +11,10 @@ const RiesgoAdicional = mongoose.model(
     'riesgoadicionals'
 )
 
-router.get('/riesgos-adicionales', async (req, res) => {
-    console.log('📡 GET /api/riesgos-adicionales ejecutado')
-    const riesgos = await RiesgoAdicional.find().limit(5)
+router.get('/riesgos-prueba', async (req, res) => {
+    console.log('📡 GET /api/riesgos-prueba ejecutado ✅')
+    const riesgos = await RiesgoAdicional.find().limit(3)
     res.json(riesgos)
 })
 
 export default router
-
-
