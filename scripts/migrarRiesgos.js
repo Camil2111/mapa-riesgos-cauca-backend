@@ -10,11 +10,8 @@ const filePath = path.join(process.cwd(), 'data', 'datos_riesgos.json')
 
 async function migrar() {
     try {
-        // Conexión a la base de datos CORRECTA
-        await mongoose.connect(`${process.env.MONGO_URI}/mapa_riesgos`, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        })
+        // Conexión corregida (no duplicar base)
+        await mongoose.connect(process.env.MONGO_URI)
 
         const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
