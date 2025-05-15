@@ -8,7 +8,7 @@ import scrapingRoutes from './routes/scraping.routes.js'
 import estadisticasRoutes from './routes/estadisticas.js'
 import adminRoutes from './routes/admin.routes.js'
 import publicRoutes from './routes/public.routes.js'
-import riesgosAdicionalesRoutes from './routes/riesgosAdicionales.routes.js'
+import riesgosMongoRoutes from './routes/riesgosMongo.routes.js'
 
 dotenv.config()
 const app = express()
@@ -21,7 +21,7 @@ app.use('/api', publicRoutes)
 app.use('/api', adminRoutes)
 app.use('/api', scrapingRoutes)
 app.use('/api', estadisticasRoutes)
-app.use('/api', riesgosAdicionalesRoutes)
+app.use('/api', riesgosMongoRoutes)
 
 app.get('/api/prueba-riesgos', async (req, res) => {
     try {
