@@ -12,7 +12,6 @@ const RiesgoAdicionalSchema = new mongoose.Schema({
     tags: [String]
 })
 
-// Fuerza la colección exacta
-export default mongoose.model('RiesgoAdicional', RiesgoAdicionalSchema, 'riesgoadicionals')
-
+// Forzar el nombre EXACTO de la colección en Mongo
+export default mongoose.model('riesgoadicionals', RiesgoAdicionalSchema, 'RiesgoAdicional')
 
