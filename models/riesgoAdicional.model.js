@@ -12,5 +12,7 @@ const RiesgoAdicionalSchema = new mongoose.Schema({
     tags: [String]
 })
 
+// Fuerza la colección exacta
 export default mongoose.model('RiesgoAdicional', RiesgoAdicionalSchema, 'riesgoadicionals')
+
 
