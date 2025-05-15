@@ -11,10 +11,16 @@ const RiesgoAdicional = mongoose.model(
     'riesgoadicionals'
 )
 
-router.get('/riesgos-prueba', async (req, res) => {
-    console.log('📡 GET /api/riesgos-prueba ejecutado ✅')
-    const riesgos = await RiesgoAdicional.find().limit(3)
-    res.json(riesgos)
+router.get('/riesgos-adicionales', async (req, res) => {
+    console.log('📡 GET /api/riesgos-adicionales ejecutado ✅')
+    try {
+        const riesgos = await RiesgoAdicional.find().limit(5)
+        res.json(riesgos)
+    } catch (error) {
+        console.error('❌ Error:', error.message)
+        res.status(500).json({ error: 'Error al consultar riesgos' })
+    }
 })
 
 export default router
+
