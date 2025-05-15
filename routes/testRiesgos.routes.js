@@ -1,19 +1,18 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import auth from './auth.middleware.js' // Asegúrate que esta ruta esté correcta
+import auth from './auth.middleware.js' // ⚠️ Ajustá si tu middleware está en otra ruta
 
 console.log('📥 CARGADA testRiesgos.routes.js ✅')
 
 const router = express.Router()
 
-// Modelo RiesgoAdicional sin schema estricto
 const RiesgoAdicional = mongoose.model(
     'RiesgoAdicional',
     new mongoose.Schema({}, { strict: false }),
     'riesgoadicionals'
 )
 
-// ✅ GET: Obtener todos los riesgos
+// ✅ GET: Obtener riesgos
 router.get('/riesgos-adicionales', async (req, res) => {
     console.log('📡 GET /api/riesgos-adicionales ejecutado ✅')
     try {
@@ -25,12 +24,17 @@ router.get('/riesgos-adicionales', async (req, res) => {
     }
 })
 
-// ✅ POST: Sobrescribir los riesgos con token
+// ✅ POST: Guardar riesgos
 router.post('/riesgos-adicionales', auth, async (req, res) => {
+    console.log('📨 POST /api/riesgos-adicionales ejecutado')
+    console.log('🛡️ Token recibido:', req.headers.authorization)
+    console.log('📦 Tipo de datos recibidos:', typeof req.body, '| Array:', Array.isArray(req.body))
+
     try {
         const data = req.body
 
         if (!Array.isArray(data)) {
+            console.warn('❌ No se recibió un array válido')
             return res.status(400).json({ error: '❌ Formato inválido. Se esperaba un array.' })
         }
 
