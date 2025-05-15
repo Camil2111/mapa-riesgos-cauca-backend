@@ -23,6 +23,19 @@ app.use('/api', scrapingRoutes)
 app.use('/api', estadisticasRoutes)
 app.use('/api', riesgosAdicionalesRoutes)
 
+app.get('/api/prueba-riesgos', async (req, res) => {
+    try {
+        const mongoose = await import('mongoose')
+        const RiesgoAdicional = mongoose.default.model('RiesgoAdicional', new mongoose.default.Schema({}, { strict: false }), 'riesgoadicionals')
+        const riesgos = await RiesgoAdicional.find().limit(5)
+        res.json(riesgos)
+    } catch (error) {
+        console.error('❌ Error en prueba directa:', error.message)
+        res.status(500).json({ error: 'Error consultando riesgos directo' })
+    }
+})
+
+
 // Conexión a MongoDB
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
