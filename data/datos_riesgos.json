@@ -2688,5 +2688,315 @@
     "contexto": "Información preliminar de riesgo",
     "estructuras_zona": "Sin datos",
     "novedades": "Novedades no especificadas"
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Quibdó",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.682166,
+    "lng": -76.638144
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Acandí",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 8.512178,
+    "lng": -77.279951
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Alto Baudó",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.516221,
+    "lng": -76.974373
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Atrato",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.531419,
+    "lng": -76.635674
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Bagadó",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.409681,
+    "lng": -76.416063
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Bahía Solano",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 6.222807,
+    "lng": -77.401359
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Bajo Baudó",
+    "nivel_riesgo": "Bajo",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 4.954576,
+    "lng": -77.365717
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Bojayá",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 6.559708,
+    "lng": -76.886773
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "El Cantón Del San Pablo",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.335321,
+    "lng": -76.726844
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Carmen Del Darién",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 7.158294,
+    "lng": -76.970798
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Cértegui",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.371373,
+    "lng": -76.607619
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Condoto",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.091003,
+    "lng": -76.650683
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "El Carmen De Atrato",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.899789,
+    "lng": -76.142112
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "El Litoral Del San Juan",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 4.259564,
+    "lng": -77.363702
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Istmina",
+    "nivel_riesgo": "Bajo",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.153946,
+    "lng": -76.68518
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Juradó",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 7.103619,
+    "lng": -77.762751
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Lloró",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.49789,
+    "lng": -76.545147
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Medio Atrato",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.994935,
+    "lng": -76.783042
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Medio Baudó",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.192471,
+    "lng": -76.950891
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Medio San Juan",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.098291,
+    "lng": -76.694409
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Nóvita",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 4.956063,
+    "lng": -76.609467
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Nuevo Belén De Bajirá",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 7.3719,
+    "lng": -76.71727
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Nuquí",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.709812,
+    "lng": -77.265507
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Río Iró",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.1863,
+    "lng": -76.472925
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Río Quito",
+    "nivel_riesgo": "Crítico",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.483667,
+    "lng": -76.740684
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Riosucio",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 7.436704,
+    "lng": -77.113156
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "San José Del Palmar",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 4.896954,
+    "lng": -76.234227
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Sipí",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 4.65262,
+    "lng": -76.643453
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Tadó",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.264873,
+    "lng": -76.558571
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Unguía",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 8.04406,
+    "lng": -77.092538
+  },
+  {
+    "departamento": "Chocó",
+    "municipio": "Unión Panamericana",
+    "nivel_riesgo": "Moderado",
+    "contexto": "Sin información",
+    "novedades": "Sin información",
+    "estructuras_zona": "ELN",
+    "lat": 5.281108,
+    "lng": -76.630143
   }
 ]

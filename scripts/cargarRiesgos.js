@@ -41,9 +41,13 @@ const registros = datos
             municipio: r.municipio?.trim().toUpperCase() || 'DESCONOCIDO',
             departamento: r.departamento?.trim().toUpperCase() || 'SIN DEPARTAMENTO',
             nivel_riesgo: r.nivel_riesgo?.trim().toLowerCase() || 'bajo',
-            contexto: r.contexto?.trim() || '',
-            novedades: r.novedades?.trim() || '',
-            estructuras_zona: r.estructuras_zona?.trim() || '',
+            contexto: r.contexto?.trim() || 'Sin información',
+            novedades: r.novedades?.trim() || 'Sin información',
+            estructuras_zona: typeof r.estructuras_zona === 'string'
+                ? r.estructuras_zona.trim()
+                : Array.isArray(r.estructuras_zona)
+                    ? r.estructuras_zona.join(', ').trim()
+                    : '',
             lat,
             lng
         }
