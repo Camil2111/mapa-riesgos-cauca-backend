@@ -54,6 +54,13 @@ const registros = datos
     })
     .filter(Boolean) // quita nulos
 
+console.log("Registros listos para insertar:");
+console.log(registros.length);
+console.log(registros.map(r => r.departamento).filter(dep => dep === "Chocó" || dep === "CHOCÓ"));
+console.log("📋 Mostrando primeros registros a insertar:");
+console.log(registros.slice(0, 3))
+
+
 // Conectar y cargar a MongoDB
 mongoose.connect(process.env.MONGO_URI)
     .then(async () => {
