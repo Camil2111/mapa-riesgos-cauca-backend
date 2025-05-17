@@ -1,7 +1,8 @@
 import express from 'express';
 import Evento from '../models/evento.model.js';
 import runGoogleNewsScraper from '../scrapers/googleNewsScraper.js';
-import auth from '../middlewares/auth.js';
+import auth from '../middlewares/auth.middleware.js';
+
 
 const router = express.Router();
 
