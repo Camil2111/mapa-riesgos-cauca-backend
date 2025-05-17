@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 import riesgoRoutes from './routes/riesgo.routes.js';
 import eventoRoutes from './routes/evento.routes.js';
 import estadisticasRoutes from './routes/estadisticas.js';
-import scrapingRoutes from './routes/scraping.routes.js';
 import debugRoutes from './routes/debug.routes.js';
 import adminRoutes from './routes/admin.routes.js';
 import publicRoutes from './routes/public.routes.js'
@@ -33,7 +32,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/riesgos', riesgoRoutes);
 app.use('/api/eventos', eventoRoutes);
 app.use('/api/estadisticas', estadisticasRoutes);
-app.use('/api', scrapingRoutes);
 app.use('/debug', debugRoutes)
 app.use('/api', adminRoutes);
 app.use('/api', publicRoutes)
