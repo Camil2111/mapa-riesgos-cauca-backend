@@ -1,6 +1,7 @@
 // scrapers/cron.js
 import cron from 'node-cron'
-import runGoogleNewsScraper from './googleNewsScraper.js'
+import runGoogleNewsScraper from '../scrapers/googleNewsScraper.js';
+
 
 // Ejecutar bot inteligente cada 6 horas (ejemplo)
 cron.schedule('0 */6 * * *', async () => {
