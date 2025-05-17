@@ -1,12 +1,8 @@
 // backend/scrapers/index.js
-import { scrapeProclama } from './proclamaScraper.js'
-import { scrapeBluRadio } from './bluRadioScraper.js'
-import { scrapeAlertas } from './alertasHumanitariasScraper.js'
+import runGoogleNewsScraper from './googleNewsScraper.js';
 
 export const ejecutarScrapers = async () => {
-    console.log('🚨 Ejecutando todos los scrapers...')
-    await scrapeProclama()
-    await scrapeBluRadio()
-    await scrapeAlertas()
-    console.log('✅ Todos los scrapers finalizados.')
-}
+    console.log('🚨 Ejecutando bot de Google News...');
+    const resultado = await runGoogleNewsScraper();
+    console.log(`✅ Bot finalizado. Noticias insertadas: ${resultado.insertados}`);
+};
