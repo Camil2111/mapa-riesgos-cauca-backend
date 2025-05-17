@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 
 const eventoSchema = new mongoose.Schema({
+    titulo: { type: String },
     municipio: { type: String, required: true },
     vereda: { type: String },
     tipo: { type: String },

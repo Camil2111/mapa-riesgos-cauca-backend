@@ -8,13 +8,25 @@ const router = express.Router()
 // 👉 Obtener todos los eventos (ordenados por fecha descendente)
 router.get('/', async (req, res) => {
     try {
-        const eventos = await Evento.find().sort({ fecha: -1 })
+        const { departamento, municipio } = req.query
+        const query = {}
+
+        if (departamento) {
+            query.departamento = new RegExp(`^${departamento}$`, 'i') // busca sin importar mayúsculas
+        }
+
+        if (municipio) {
+            query.municipio = new RegExp(`^${municipio}$`, 'i')
+        }
+
+        const eventos = await Evento.find(query).sort({ fecha: -1 }).limit(100)
         res.json(eventos)
     } catch (error) {
         console.error('❌ Error obteniendo eventos:', error)
         res.status(500).json({ message: 'Error al obtener eventos' })
     }
 })
+
 
 // 👉 Agregar un nuevo evento
 router.post('/', async (req, res) => {
