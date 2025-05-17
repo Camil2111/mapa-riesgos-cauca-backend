@@ -1,74 +1,64 @@
 // scrapers/googleNewsScraper.js
-import Parser from 'rss-parser'
+import Parser from 'rss-parser';
+import insertarEvento from './utils/insertEvento.js';
 
-const parser = new Parser()
+const parser = new Parser();
+const RSS_URL = 'https://news.google.com/rss/search?q=conflicto+OR+GAO+OR+desplazamiento+OR+paro+OR+retén+ilegal&hl=es-419&gl=CO&ceid=CO:es';
 
-const departamentos = [
-    { nombre: 'CAUCA', lat: 2.44, lng: -76.61 },
-    { nombre: 'VALLE DEL CAUCA', lat: 3.45, lng: -76.53 },
-    { nombre: 'NARIÑO', lat: 1.23, lng: -77.28 },
-    { nombre: 'CHOCÓ', lat: 5.68, lng: -76.64 }
-]
+const palabrasClave = [
+    'conflicto', 'secuestro', 'gao', 'farc', 'asesinan', 'capturan', 'eln', 'disidencias',
+    'enfrentamientos', 'zona rural', 'hostigamiento', 'grupo armado', 'desplazamiento',
+    'combates', 'ataque', 'marchas', 'bloqueo', 'explosion', 'atentado', 'paro',
+    'explosivo', 'presencia armada'
+];
 
-const keywords = [
-    'conflicto',
-    'GAO',
-    'disidencias',
-    'desplazamiento',
-    'presencia armada',
-    'paro',
-    'paro armado',
-    'convocatoria',
-    'protesta',
-    'marcha',
-    'bloqueo',
-    'ELN',
-    'FARC',
-    'combates',
-    'secuestro',
-    'extorsion',
-    'atentado',
-    'explosivo',
-]
+const ubicaciones = [
+    'cauca', 'nariño', 'chocó', 'valle del cauca',
+    'buenaventura', 'tumaco', 'popayán', 'quibdó',
+    'caloto', 'argelia', 'guapi', 'toribío'
+];
 
-const googleNewsScraper = async () => {
-    const eventos = []
-    const hoy = new Date()
-    const hace7dias = new Date(hoy)
-    hace7dias.setDate(hoy.getDate() - 7)
+const runGoogleNewsScraper = async () => {
+    const feed = await parser.parseURL(RSS_URL);
+    let insertados = 0;
+    const detalles = [];
 
-    for (const dpto of departamentos) {
-        const query = keywords.map(k => encodeURIComponent(k)).join('+OR+')
-        const rssUrl = `https://news.google.com/rss/search?q=(${query})+${encodeURIComponent(dpto.nombre)}&hl=es-419&gl=CO&ceid=CO:es`
+    for (const item of feed.items) {
+        const texto = `${item.title} ${item.contentSnippet}`.toLowerCase();
 
-        try {
-            const feed = await parser.parseURL(rssUrl)
-            feed.items.forEach(item => {
-                const fechaNoticia = new Date(item.pubDate)
-                if (fechaNoticia < hace7dias) return
+        const matchClave = palabrasClave.some(p => texto.includes(p));
+        const matchUbicacion = ubicaciones.some(u => texto.includes(u));
 
-                eventos.push({
-                    idNoticia: item.link,
-                    titulo: item.title,
-                    descripcion: item.contentSnippet || item.title,
-                    tipo: 'Noticia Google News',
-                    fecha: fechaNoticia.toISOString(),
-                    municipio: 'No especificado',
-                    departamento: dpto.nombre,
-                    vereda: 'No especificado',
-                    tags: keywords.filter(k => item.title.toLowerCase().includes(k.toLowerCase())),
-                    fuente: 'Google News RSS',
-                    lat: dpto.lat,
-                    lng: dpto.lng,
-                    link: item.link
-                })
-            })
-        } catch (err) {
-            console.warn(`❌ Error leyendo RSS para ${dpto.nombre}:`, err.message)
+        if (matchClave && matchUbicacion) {
+            const evento = {
+                titulo: item.title,
+                descripcion: item.title,
+                tipo: 'Noticia Google News',
+                fuente: 'Google News RSS',
+                municipio: 'No especificado',
+                vereda: 'No especificado',
+                nivel_riesgo: 'Moderado',
+                fecha: new Date(item.pubDate),
+                lat: 2.44,
+                lng: -76.61,
+                link: item.link,
+                tags: []
+            };
+
+            const res = await insertarEvento(evento);
+            if (res) {
+                insertados++;
+                detalles.push(evento.descripcion);
+            }
         }
     }
 
-    return eventos
-}
+    return {
+        fuente: 'Google News RSS',
+        insertados,
+        detalles
+    };
+};
 
-export default googleNewsScraper
+export default runGoogleNewsScraper;
+

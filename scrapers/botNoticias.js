@@ -1,44 +1,27 @@
 // scrapers/botNoticias.js
-import insertEvento from './utils/insertEvento.js'
-import googleNewsScraper from './googleNewsScraper.js'
+import runGoogleNewsScraper from './googleNewsScraper.js';
 
+const main = async () => {
+    console.log('🤖 Iniciando bot inteligente de noticias...');
 
-const fuentes = [
-    { nombre: 'Google News RSS', ejecutar: googleNewsScraper },
-]
+    try {
+        console.log('🔍 Procesando Google News RSS...');
+        const result = await runGoogleNewsScraper();
 
-const botNoticias = async () => {
-    console.log('🤖 Iniciando bot inteligente de noticias...')
-    for (const fuente of fuentes) {
-        try {
-            console.log(`🔍 Procesando ${fuente.nombre}...`)
-            const noticias = await fuente.ejecutar()
-            console.log(`🧾 ${fuente.nombre} entregó ${noticias.length} noticias`)
-
-
-            for (const noticia of noticias) {
-                const texto = `${noticia.titulo} ${noticia.descripcion}`.toLowerCase()
-
-                const esRelevante = [
-                    'conflicto', 'secuestro', 'gao', 'farc', 'asesinan', 'capturan', 'eln', 'disidencias', 'enfrentamientos',
-                    'desplazamiento', 'combates', 'ataque', 'marchas', 'bloqueos', 'ELN', 'explosion', 'atentado', 'paro', 'explosivo', 'presencia armada'
-                ].some(palabra => texto.includes(palabra))
-
-                console.log(`🔎 Evaluando noticia: ${noticia.titulo}`)
-                console.log(`➡️ Texto analizado: ${texto}`)
-
-                if (esRelevante) {
-                    await insertEvento(noticia)
-                    console.log(`✅ Insertado: ${noticia.titulo}`)
-                } else {
-                    console.log(`⏭️ Irrelevante: ${noticia.titulo}`)
-                }
-            }
-        } catch (err) {
-            console.error(`❌ Error en ${fuente.nombre}:`, err.message)
+        if (result.insertados > 0) {
+            console.log(`🧾 Google News RSS entregó ${result.insertados} noticias relevantes`);
+            result.detalles.forEach((titulo, i) => {
+                console.log(`  ${i + 1}. ${titulo}`);
+            });
+        } else {
+            console.log('🧾 Google News RSS entregó 0 noticias relevantes');
         }
+    } catch (err) {
+        console.error('❌ Error en Google News RSS:', err.message);
     }
-    console.log('✅ Bot finalizado')
-}
 
-botNoticias()
+    console.log('✅ Bot finalizado');
+};
+
+main();
+

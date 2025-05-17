@@ -10,6 +10,7 @@ import debugRoutes from './routes/debug.routes.js';
 import adminRoutes from './routes/admin.routes.js';
 import publicRoutes from './routes/public.routes.js'
 import testRiesgosRoutes from './routes/testRiesgos.routes.js';
+import botRoutes from './routes/bot.routes.js';
 import './cron/scraperCron.js';
 
 dotenv.config();
@@ -37,6 +38,7 @@ app.use('/debug', debugRoutes)
 app.use('/api', adminRoutes);
 app.use('/api', publicRoutes)
 app.use('/api', testRiesgosRoutes);
+app.use('/api/bot', botRoutes);
 
 
 
